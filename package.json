@@ -13,5 +13,8 @@
     "mongoose": "^6.2.1",
     "mongoose-unique-validator": "^3.0.0",
     "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "serve": "npx nodemon index.js"
   }
 }
