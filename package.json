@@ -5,11 +5,13 @@
   "repository": "https://github.com/alibeniaminali/project-3.git",
   "author": "Dougie <dougie-b@hotmail.com>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.1",
-    "mongoose-unique-validator": "^3.0.0"
+    "mongoose-unique-validator": "^3.0.0",
+    "nodemon": "^2.0.15"
   }
 }
