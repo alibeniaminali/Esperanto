@@ -1,6 +1,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import { port, dbURI } from './config/environment.js'
+import router from './config/routes.js'
 
 const app = express()
 
@@ -13,6 +14,8 @@ const startServer = async () => {
       console.log(`Who's there?! ${req.url} + ${req.method}`)
       next()
     })
+
+    app.use(router)
 
     app.use((req, res) => {
       return res.status(404).json({ message: 'failed to connect' })
