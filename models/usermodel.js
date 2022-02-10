@@ -9,6 +9,12 @@ const userSchema = new Schema({
   password: { type: String, required: true },
 })
 
+userSchema.virtual('ownedTeacher', {
+  ref: 'Teacher',
+  localField: '_id',
+  foreignField: 'owner',
+})
+
 userSchema
   .virtual('passwordConfirmation')
   .set(function (passwordConfirmation) {

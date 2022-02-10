@@ -3,6 +3,7 @@ import express from 'express'
 import { allTeachers, addTeacher, getSingleTeacher, updateTeacher, deleteTeacher, addReview, deleteReview } from '../controller/teacherscontroller.js'
 import { secureRoute } from './secureRoute.js'
 import { loginUser, registerUser } from '../controller/auth.js'
+import { getProfile } from '../controller/usercontroller.js'
 
 const router = express.Router()
 
@@ -26,5 +27,8 @@ router.route('/login')
 
 router.route('/register')
   .post(registerUser)
+
+router.route('/profile')
+  .get(secureRoute, getProfile)
 
 export default router

@@ -24,7 +24,7 @@ export const addTeacher = async (req, res) => {
 export const getSingleTeacher = async (req, res) => {
   try {
     const { id } = req.params
-    const teacher = await Teacher.findById(id)
+    const teacher = await Teacher.findById(id).populate('reviews.owner')
     console.log(teacher)
     return res.status(200).json(teacher)
   } catch (err) {
