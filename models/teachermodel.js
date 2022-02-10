@@ -15,6 +15,7 @@ const teacherSchema = new Schema({
   alsoSpeaks: [{ type: String }],
   aboutMe: { type: String, maxlength: 500, required: true },
   displayPicture: { type: String, required: true },
+  owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
 })
 
 teacherSchema.plugin(uniqueValidator)

@@ -1,6 +1,6 @@
 import express from 'express'
 
-import { allTeachers, addTeacher, getSingleTeacher } from '../controller/teacherscontroller.js'
+import { allTeachers, addTeacher, getSingleTeacher, updateTeacher } from '../controller/teacherscontroller.js'
 import { secureRoute } from './secureRoute.js'
 import { loginUser, registerUser } from '../controller/auth.js'
 
@@ -17,6 +17,7 @@ router.route('/teachers')
 
 router.route('/teachers/:id')
   .get(secureRoute, getSingleTeacher)
+  .put(secureRoute, updateTeacher)
 
 
 router.route('/login')

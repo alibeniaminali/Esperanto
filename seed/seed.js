@@ -17,7 +17,11 @@ const seedDatabase = async () => {
     const users = await User.create(userData)
     console.log(`Woah woah, so many users ${users.length}`)
 
-    const teachers = await Teacher.create(teacherData)
+    const ownedTeachers = teacherData.map(teacher => {
+      return { ...teacher, owner: users[0]._id }
+    })
+
+    const teachers = await Teacher.create(ownedTeachers)
     console.log(`such teachers ${teachers.length}`)
 
     await mongoose.connection.close()
