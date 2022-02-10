@@ -68,8 +68,24 @@ export const addReview = async (req, res) => {
     teacher.reviews.unshift(newReview)
     await teacher.save()
     return res.status(201).json(teacher)
-    
+
   } catch (err) {
     return res.status(422).json({ message: err.message })
+  }
+}
+
+export const deleteReview = async (req, res) => {
+  try {
+    const { id, reviewId } = req.params
+    const teacher = await Teacher.findById(id)
+    if (!teacher) throw new Error('Teacher not found')
+    const reviewToDelete = teacher.reviews.id(reviewId)
+    if (!reviewToDelete) throw new Error('Review not found')
+    if (!reviewToDelete.owner.equals(req.currentUser._id)) throw new Error('Unauthorised')
+    await reviewToDelete.remove()
+    await teacher.save()
+    return res.sendStatus(204)
+  } catch (err) {
+    return res.status(404).json({ message: err.message })
   }
 }

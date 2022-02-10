@@ -1,11 +1,8 @@
 import express from 'express'
 
-import { allTeachers, addTeacher, getSingleTeacher, updateTeacher, deleteTeacher, addReview } from '../controller/teacherscontroller.js'
+import { allTeachers, addTeacher, getSingleTeacher, updateTeacher, deleteTeacher, addReview, deleteReview } from '../controller/teacherscontroller.js'
 import { secureRoute } from './secureRoute.js'
 import { loginUser, registerUser } from '../controller/auth.js'
-
-
-
 
 const router = express.Router()
 
@@ -20,6 +17,9 @@ router.route('/teachers/:id')
 
 router.route('/teachers/:id/reviews')
   .post(secureRoute, addReview)
+
+router.route('/teachers/:id/reviews/:reviewId')
+  .delete(secureRoute, deleteReview)
   
 router.route('/login')
   .post(loginUser)
