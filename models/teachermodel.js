@@ -3,6 +3,14 @@ import uniqueValidator from 'mongoose-unique-validator'
 
 const { Schema } = mongoose
 
+const reviewSchema = new Schema({
+  text: { type: String, required: true, maxlength: 300 },
+  rating: { type: Number, required: true, min: 1, max: 5 },
+  owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+}, {
+  timestamps: true,
+})
+
 
 // need to add owner field
 const teacherSchema = new Schema({
@@ -16,6 +24,22 @@ const teacherSchema = new Schema({
   aboutMe: { type: String, maxlength: 500, required: true },
   displayPicture: { type: String, required: true },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  reviews: [reviewSchema],
+})
+
+teacherSchema.virtual('avgRating')
+  .get(function(){
+    if (!this.reviews.length) return 'Not rated yet'
+
+    const sum = this.reviews.reduce((acc, review) => {
+      return acc + review.rating
+    }, 0)
+
+    return (sum / this.reviews.length).toFixed(2)
+  })
+
+teacherSchema.set('toJSON', {
+  virtuals: true,
 })
 
 teacherSchema.plugin(uniqueValidator)

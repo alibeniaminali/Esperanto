@@ -24,7 +24,7 @@ export const addTeacher = async (req, res) => {
 export const getSingleTeacher = async (req, res) => {
   try {
     const { id } = req.params
-    const teacher = await Teacher.findById(id)
+    const teacher = await Teacher.findById(id).populate('reviews.owner')
     console.log(teacher)
     return res.status(200).json(teacher)
   } catch (err) {
@@ -43,5 +43,49 @@ export const updateTeacher = async (req, res) => {
     return res.status(202).json(teacherToUpdate)
   } catch (error) {
     return res.status(404).json({ message: error.message })
+  }
+}
+
+export const deleteTeacher = async (req, res) => {
+  try {
+    const { id } = req.params
+    const teacherToDelete = await Teacher.findById(id)
+    if (!teacherToDelete.owner.equals(req.currentUser._id)) throw new Error('Well you don\'t own them.....naughty')
+    await teacherToDelete.remove()
+    return res.sendStatus(204)
+  } catch (err) {
+    return res.status(404).json({ message: err.message })
+  }
+}
+
+export const addReview = async (req, res) => {
+  try {
+    const { id } = req.params
+    const teacher = await Teacher.findById(id)
+    if (!teacher) throw new Error('Teacher not found')
+
+    const newReview = { ...req.body, owner: req.currentUser._id }
+    teacher.reviews.unshift(newReview)
+    await teacher.save()
+    return res.status(201).json(teacher)
+
+  } catch (err) {
+    return res.status(422).json({ message: err.message })
+  }
+}
+
+export const deleteReview = async (req, res) => {
+  try {
+    const { id, reviewId } = req.params
+    const teacher = await Teacher.findById(id)
+    if (!teacher) throw new Error('Teacher not found')
+    const reviewToDelete = teacher.reviews.id(reviewId)
+    if (!reviewToDelete) throw new Error('Review not found')
+    if (!reviewToDelete.owner.equals(req.currentUser._id)) throw new Error('Unauthorised')
+    await reviewToDelete.remove()
+    await teacher.save()
+    return res.sendStatus(204)
+  } catch (err) {
+    return res.status(404).json({ message: err.message })
   }
 }
