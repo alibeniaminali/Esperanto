@@ -37,12 +37,10 @@ export const updateTeacher = async (req, res) => {
   try {
     const { id } = req.params
     const teacherToUpdate = await Teacher.findById(id)
-    console.log(teacherToUpdate)
-    console.log(req.currentUser._id)
     if (!teacherToUpdate.owner.equals(req.currentUser._id)) throw new Error('Well you don\'t own them.....naughty')
     Object.assign(teacherToUpdate, req.body)
     await teacherToUpdate.save()
-    return res.status(200).json(teacherToUpdate)
+    return res.status(202).json(teacherToUpdate)
   } catch (error) {
     return res.status(404).json({ message: error.message })
   }
