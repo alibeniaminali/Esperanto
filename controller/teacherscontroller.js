@@ -45,3 +45,31 @@ export const updateTeacher = async (req, res) => {
     return res.status(404).json({ message: error.message })
   }
 }
+
+export const deleteTeacher = async (req, res) => {
+  try {
+    const { id } = req.params
+    const teacherToDelete = await Teacher.findById(id)
+    if (!teacherToDelete.owner.equals(req.currentUser._id)) throw new Error('Well you don\'t own them.....naughty')
+    await teacherToDelete.remove()
+    return res.sendStatus(204)
+  } catch (err) {
+    return res.status(404).json({ message: err.message })
+  }
+}
+
+export const addReview = async (req, res) => {
+  try {
+    const { id } = req.params
+    const teacher = await Teacher.findById(id)
+    if (!teacher) throw new Error('Teacher not found')
+
+    const newReview = { ...req.body, owner: req.currentUser._id }
+    teacher.reviews.unshift(newReview)
+    await teacher.save()
+    return res.status(201).json(teacher)
+    
+  } catch (err) {
+    return res.status(422).json({ message: err.message })
+  }
+}

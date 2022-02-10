@@ -1,6 +1,6 @@
 import express from 'express'
 
-import { allTeachers, addTeacher, getSingleTeacher, updateTeacher } from '../controller/teacherscontroller.js'
+import { allTeachers, addTeacher, getSingleTeacher, updateTeacher, deleteTeacher, addReview } from '../controller/teacherscontroller.js'
 import { secureRoute } from './secureRoute.js'
 import { loginUser, registerUser } from '../controller/auth.js'
 
@@ -13,13 +13,14 @@ router.route('/teachers')
   .get(allTeachers)
   .post(secureRoute, addTeacher)
 
-
-
 router.route('/teachers/:id')
   .get(secureRoute, getSingleTeacher)
   .put(secureRoute, updateTeacher)
+  .delete(secureRoute, deleteTeacher)
 
-
+router.route('/teachers/:id/reviews')
+  .post(secureRoute, addReview)
+  
 router.route('/login')
   .post(loginUser)
 
