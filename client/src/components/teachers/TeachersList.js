@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
 
 const TeachersList = () => {
   const [teachers, setTeachers] = useState([])
@@ -30,6 +31,7 @@ const TeachersList = () => {
             const { firstName, pricePerHour, _id } = teacher
             return (
               <Col key={_id} md="6" lg="4" className="teacher mb-4">
+                <Link to={`/teachers/${teacher._id}`}>
                 <Card className="h-100">
                   <div className="card-image m-auto">
                     <p className="w-100"> {firstName}</p>
@@ -38,6 +40,7 @@ const TeachersList = () => {
                     {pricePerHour}
                   </Card.Footer>
                 </Card>
+                </Link>
               </Col>
             )
           })}
