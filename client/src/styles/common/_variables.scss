@@ -1,0 +1,11 @@
+$yellow: rgb(255, 214, 124);
+$grey: rgb(66, 68, 73);
+$dark-grey: rgb(183, 188, 197);
+$border-radius: 8px;
+
+.btn-yellow {
+  background-color: $yellow;
+  &:hover{
+    background-color: darken($yellow, 10%);
+  }
+}
