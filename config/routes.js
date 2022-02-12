@@ -21,7 +21,7 @@ router.route('/teachers/:id/reviews')
 
 router.route('/teachers/:id/reviews/:reviewId')
   .delete(secureRoute, deleteReview)
-  
+
 router.route('/login')
   .post(loginUser)
 
