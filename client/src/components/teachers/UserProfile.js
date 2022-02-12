@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const UserProfile = () => {
 
   return (
-    <h2>This is User Profile Page</h2>
+
+<h2>hello</h2>
+
+    // <Link id="create_ teacjer_link" to={`/users/${teacher._id}`}></Link>
   )
 }
 

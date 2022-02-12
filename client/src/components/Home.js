@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 const Home = () => (
   <div className="hero">
     <Card className="homecard" body>
-      <h1>Welcome to Teacher Lounge</h1>
+      <h1>Welcome to Esperanto</h1>
       <ul>
         <li>🌱 1 to 1 language lessons</li>
         <li>🌱 Live online learning</li>

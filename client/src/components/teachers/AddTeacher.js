@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 import { useNavigate } from 'react-router-dom'
+import { getTokenFromLocalStorage } from '../helpers/auth'
 
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+
 
 const Register = () => {
 
@@ -41,9 +43,13 @@ const Register = () => {
     const handleSubmit = async (e) => {
       e.preventDefault() // prevent reload
       try {
-        await axios.post('/api/register', formData)
-        // Redirect using the navigate variable, passing in the route we want to redirect to
-        navigate('/login')
+        await axios.post('/api/teachers', {
+          headers: {
+            Authorization: `Bearer ${getTokenFromLocalStorage()}`,
+          },
+        }, formData)
+        console.log(formData.firstName)
+        navigate('/teachers')
       } catch (err) {
         setFormErrors(err.response.data.errors)
       }

@@ -1,4 +1,5 @@
 export const getTokenFromLocalStorage = () => {
+  console.log('getting tokent from local storage')
   return window.localStorage.getItem('teachers-token')
 }
 

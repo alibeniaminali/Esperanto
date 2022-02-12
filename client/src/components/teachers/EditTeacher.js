@@ -37,6 +37,7 @@ const EditTeacher = () => {
     aboutMe: '',
     displayPicture: '',
   })
+  
 
   useEffect(() => {
     // !userIsAuthenticated() && navigate('/login')

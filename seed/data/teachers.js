@@ -8,7 +8,7 @@ export default [
     teaches: 'Bulgarian',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://imgur.com/a/pSqrWvq',
   },
   {
     firstName: 'Ali',
@@ -19,7 +19,7 @@ export default [
     teaches: 'Turkish',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://imgur.com/a/25EGTOq',
   },
   {
     firstName: 'Peter',
@@ -30,7 +30,7 @@ export default [
     teaches: 'Lugandan',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://imgur.com/a/oHzLAnO',
   },
   {
     firstName: 'Dougie',
@@ -41,7 +41,7 @@ export default [
     teaches: 'English',
     alsoSpeaks: ['Bullshit'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://imgur.com/a/gTO0IWA',
   },
   {
     firstName: 'Ryota',
