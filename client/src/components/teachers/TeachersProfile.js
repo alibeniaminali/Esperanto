@@ -59,6 +59,7 @@ const TeacherProfile = () => {
             <p>{teacher.email}</p>
             <p>{teacher.location}</p>
             <p>{teacher.reviews}</p>
+            <Link to={`/editteacher/${teacher._id}`}className='btn btn-warning'> Edit this teacher ↩️ </Link>
           </div>
         </div>
         :
