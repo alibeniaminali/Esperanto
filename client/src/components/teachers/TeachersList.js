@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
+import Select from 'react-select'
 
 import { Link } from 'react-router-dom'
 
@@ -30,27 +31,35 @@ const TeachersList = () => {
 
   }
 
+  const options = teachers.map(teacher => {
+    return {
+      label: teacher.teaches,
+      value: teacher.teaches
+    }
+  })
+
   return (
 
-    // <Form onSubmit={handleSubmit} className='mt-4'>
-    //       <h2>Login</h2>
-    //       <Form.Group className='mb-2'>
-    //         <Form.Label htmlFor='email'>Email Address</Form.Label>
-    //         <Form.Control onChange={handleChange} type="email" name="email" placeholder='Email' defaultValue={formData.email} />
-    //       </Form.Group>
 
     <>
-      <Link to="/addteacher" className='btn btn-warning'>add your teacher ↩️ </Link>
+      <Link to="/addteacher" className='btn btn-warning'>add yourself as a teacher ↩️ </Link>
+      <p className='lead'>Search from {teachers.length} teachers</p>
+      <Select
+        className='search-line'
+        placeholder='Search...'
+        options={options}
+        onChange={opt => console.log(opt)}
+      />
       <div className='form_container'>
-      <Form onSubmit={handleSubmit}>
-        <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
-        <Form.Control
-          type="password"
-          id="inputPassword5"
-          aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
-            setSearchTerm(event.target.value)
-          }} />
-      </Form>
+        <Form onSubmit={handleSubmit}>
+          <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
+          <Form.Control
+            type="password"
+            id="inputPassword5"
+            aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
+              setSearchTerm(event.target.value)
+            }} />
+        </Form>
       </div>
       <ul className='teachers_list'></ul>
       <Container className='teachers_container'>{teachers && teachers.filter((teachers) => {
@@ -99,17 +108,5 @@ const TeachersList = () => {
   )
 }
 
-
-{/* <div class="container">
-  <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
-  </div>
-  <div class="row">
-    <div class="col"></div> */}
 
 export default TeachersList
