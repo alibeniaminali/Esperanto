@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useNavigate, useParams } from 'react-router-dom'
 import { userIsAuthenticated, getTokenFromLocalStorage } from '../helpers/auth'
 
-import AddTeacher from './AddTeacher'
+import TeacherForm from './TeacherForm'
 
 import Container from 'react-bootstrap/Container'
 
@@ -23,7 +23,7 @@ const EditTeacher = () => {
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
-    displayPicture: '',
+    // displayPicture: '',
   })
 
   const [formErrors, setFormErrors] = useState({
@@ -35,7 +35,7 @@ const EditTeacher = () => {
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
-    displayPicture: '',
+    // displayPicture: '',
   })
 
   useEffect(() => {
@@ -43,8 +43,7 @@ const EditTeacher = () => {
 
     const getTeacher = async () => {
       try {
-        const { data } = await axios.get(`/api/teachers/620a42a7ac81725ab886231c`,
-          formData,
+        const { data } = await axios.get(`/api/teachers/${teacherId}`,
           {
             headers: {
               Authorization: `Bearer ${getTokenFromLocalStorage()}`,
@@ -52,11 +51,11 @@ const EditTeacher = () => {
           })
         setFormData(data)
       } catch (err) {
-        setTeacherError('Failed to retrieve teacher information. Failed to populate.')
+        setTeacherError('You sure they teach here?')
       }
     }
     getTeacher()
-  }, [teacherId, navigate])
+  }, [teacherId, formData, navigate])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -85,7 +84,7 @@ const EditTeacher = () => {
   return (
     <section className="form-page">
       <Container className='mt-4'>
-        <AddTeacher
+        <TeacherForm
           handleSubmit={handleSubmit}
           handleChange={handleChange}
           formData={formData}

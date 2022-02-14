@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Form from 'react-bootstrap/Form'
+
 import { Link } from 'react-router-dom'
 
 const TeachersList = () => {
@@ -30,14 +32,29 @@ const TeachersList = () => {
 
   return (
 
+    // <Form onSubmit={handleSubmit} className='mt-4'>
+    //       <h2>Login</h2>
+    //       <Form.Group className='mb-2'>
+    //         <Form.Label htmlFor='email'>Email Address</Form.Label>
+    //         <Form.Control onChange={handleChange} type="email" name="email" placeholder='Email' defaultValue={formData.email} />
+    //       </Form.Group>
 
     <>
       <Link to="/addteacher" className='btn btn-warning'>add your teacher ↩️ </Link>
-      <form onSubmit={handleSubmit}>
-        <input type='text' id='teacherssubmit' placeholder="Choose Your Language" onChange={event => {
-          setSearchTerm(event.target.value)
-        }} ></input>
-      </form>
+      <div className='form_container'>
+      <Form onSubmit={handleSubmit}>
+        <Form.Label htmlFor="inputPassword5">Languages</Form.Label>
+        <Form.Control
+          type="password"
+          id="inputPassword5"
+          aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="Choose Your Language" onChange={event => {
+            setSearchTerm(event.target.value)
+          }} />
+        <Form.Text id="passwordHelpBlock" muted>
+          Write the language you want to find teachers 
+        </Form.Text>
+      </Form>
+      </div>
       <ul className='teachers_list'></ul>
       <Container className='teachers_container'>{teachers && teachers.filter((teachers) => {
         if (searchTerm === '') {
@@ -80,7 +97,7 @@ const TeachersList = () => {
         )
       })}
       </Container>
-      
+
     </>
   )
 }
