@@ -28,7 +28,7 @@ const teacherSchema = new Schema({
 })
 
 teacherSchema.virtual('avgRating')
-  .get(function(){
+  .get(function () {
     if (!this.reviews.length) return 'Not rated yet'
 
     const sum = this.reviews.reduce((acc, review) => {
