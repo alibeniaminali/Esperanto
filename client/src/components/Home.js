@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+// import Nav from 'react-bootstrap/Nav'
+// import NavDropdown from 'react-bootstrap/NavDropdown'
+// import Navbar from 'react-bootstrap/Navbar'
 
 
 const Home = () => {
@@ -80,8 +81,10 @@ const Home = () => {
   </Col>
   </Row>
 </Container>
+
+{/* <Navbar fixed="bottom">
 <Container fluid>
-  <Row className="footer">
+  <Row>
     <Col sm>Our Logo</Col>
     <Col sm>Text to lead to home page </Col>
     <Nav className="me-auto">
@@ -108,6 +111,10 @@ const Home = () => {
     
   </Row>
 </Container>
+
+</Navbar> */}
+
+
 </>
   )
 }
