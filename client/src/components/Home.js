@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import PeopleTalking from '../images/people-talking-img.png'
 // import Nav from 'react-bootstrap/Nav'
 // import NavDropdown from 'react-bootstrap/NavDropdown'
 // import Navbar from 'react-bootstrap/Navbar'
@@ -44,7 +45,6 @@ const Home = () => {
           <Card.Text>
             Find the languages you want to learn and practice at your own pace.
           </Card.Text>
-          {/* <Card.Link href="#">Another Link</Card.Link> */}
         </Card.Body>
       </Card>
     </Col>
@@ -60,7 +60,6 @@ const Home = () => {
           Find teachers from all over the world sharing their languages,
           dialects, and cultures.
         </Card.Text>
-      {/* <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
   </Col>
@@ -75,12 +74,25 @@ const Home = () => {
       <Card.Text>
         We keep your course materials so you can access them whenever you need.
       </Card.Text>
-      {/* <Card.Link href="#">Another Link</Card.Link> */}
     </Card.Body>
   </Card>
   </Col>
   </Row>
+  <Row className="animated-img">
+    <img src={PeopleTalking} alt="people chatting"></img>
+  </Row>
+  {/* <Row>
+  <div className="collaborations">
+    <p>Collaborating with :</p>
+    <div className="collaborations-links">
+    <a href="/">LinkedIn</a>
+    <a href="/">LinkedIn</a>
+    <a href="/">LinkedIn</a>
+    </div>
+  </div>
+</Row> */}
 </Container>
+
 
 {/* <Navbar fixed="bottom">
 <Container fluid>
@@ -111,79 +123,9 @@ const Home = () => {
     
   </Row>
 </Container>
-
 </Navbar> */}
-
-
 </>
   )
 }
-
-// <>
-//   <div className="hero">
-//     <Card className="homecard">
-//       <Card.Body>
-//         <h1>Esperanto.</h1>
-//         <h2>Your personal learning portal.</h2>
-//         <p>
-//           Few good word for our beloved website. Few good word for our beloved
-//           website. Few good word for our beloved website. Few good word for
-//           our beloved website. Few good word for our beloved website.
-//         </p>
-//         <button className="btn btn-warning" type="button">
-//           Find your teacher ⤴️
-//         </button>
-//       </Card.Body>
-//     </Card>
-//     <img
-//       src="https://scdn.italki.com/ng/static/image/milkway/homepage/content2.png"
-//       className="img-thumbnail"
-//       alt="..."
-//     ></img>
-//   </div>
-//   <div className="info-cards">
-//     <Card style={{ width: '23rem' }}>
-//       <Card.Body>
-//         <Card.Title>Languages</Card.Title>
-//         <Card.Subtitle className="mb-2 text-muted">
-//           Online Learning
-//         </Card.Subtitle>
-//         <Card.Text>Large selection of languages</Card.Text>
-//         {/* <Card.Link href="#">Card Link</Card.Link>
-//           <Card.Link href="#">Another Link</Card.Link> */}
-//       </Card.Body>
-//     </Card>
-
-//     <Card style={{ width: '23rem' }}>
-//       <Card.Body>
-//         <Card.Title>Live sessions with native-speaking teachers</Card.Title>
-//         <Card.Subtitle className="mb-2 text-muted">
-//           Online Learning
-//         </Card.Subtitle>
-//         <Card.Text>
-//           Learn from the best teachers. Participate from the comfort of your
-//           home!
-//         </Card.Text>
-//         {/* <Card.Link href="#">Card Link</Card.Link>
-//           <Card.Link href="#">Another Link</Card.Link> */}
-//       </Card.Body>
-//     </Card>
-
-//     <Card style={{ width: '23rem' }}>
-//       <Card.Body>
-//         <Card.Title>Lifetime access</Card.Title>
-//         <Card.Subtitle className="mb-2 text-muted">
-//           Online Learning
-//         </Card.Subtitle>
-//         <Card.Text>
-//           The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum
-//           dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-//         </Card.Text>
-//         {/* <Card.Link href="#">Card Link</Card.Link>
-//           <Card.Link href="#">Another Link</Card.Link> */}
-//       </Card.Body>
-//     </Card>
-//   </div>
-// </>
 
 export default Home
