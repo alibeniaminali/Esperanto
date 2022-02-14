@@ -113,10 +113,11 @@ const AddTeacher = () => {
               <Form.Control onChange={handleChange} type="text" max="500" name="aboutMe" placeholder="Write something about yourself" defaultValue={formData.aboutMe} />
               {formErrors.aboutMe && <Form.Text>{formErrors.aboutMe}</Form.Text>}
             </Form.Group>
-            {/* Upload */}
-            <Form.Group className='text-center mt-4'>
-              <Button variant="warning" type="upload">Upload photo</Button>
-            </Form.Group>
+           {/* Upload file */}
+            <Form.Group controlId="formFile" className="mb-3">
+              <Form.Label>Default file input example</Form.Label>
+              <Form.Control type="file" />
+              </Form.Group>
             {/* Submit */}
             <Form.Group className='text-center mt-4'>
               <Button variant="warning" type="submit">Submit</Button>
