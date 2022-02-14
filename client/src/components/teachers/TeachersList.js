@@ -43,16 +43,13 @@ const TeachersList = () => {
       <Link to="/addteacher" className='btn btn-warning'>add your teacher ↩️ </Link>
       <div className='form_container'>
       <Form onSubmit={handleSubmit}>
-        <Form.Label htmlFor="inputPassword5">Languages</Form.Label>
+        <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
         <Form.Control
           type="password"
           id="inputPassword5"
-          aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="Choose Your Language" onChange={event => {
+          aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
             setSearchTerm(event.target.value)
           }} />
-        <Form.Text id="passwordHelpBlock" muted>
-          Write the language you want to find teachers 
-        </Form.Text>
       </Form>
       </div>
       <ul className='teachers_list'></ul>
