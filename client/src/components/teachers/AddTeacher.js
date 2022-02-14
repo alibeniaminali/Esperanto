@@ -114,9 +114,9 @@ const AddTeacher = () => {
               {formErrors.aboutMe && <Form.Text>{formErrors.aboutMe}</Form.Text>}
             </Form.Group>
             {/* Upload */}
-            {/* <Form.Group className='text-center mt-4'>
+            <Form.Group className='text-center mt-4'>
               <Button variant="warning" type="upload">Upload photo</Button>
-            </Form.Group> */}
+            </Form.Group>
             {/* Submit */}
             <Form.Group className='text-center mt-4'>
               <Button variant="warning" type="submit">Submit</Button>
