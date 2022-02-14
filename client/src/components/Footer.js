@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterImage from '../images/footer-image.png'
 
 const Footer = () => {
     return (
@@ -6,11 +7,9 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-3 col-sm-6">
-                        <h4>About this page</h4>
-                        <ul className="list-unstyled">
-                            <li>About</li>
-                            <li>Team</li>
-                        </ul>
+                    <img
+                        src={FooterImage} className="footer-image" alt="person studying online">
+                    </img>
                     </div>
                     <div className="col-md-3 col-sm-6">
                         <h4>Platform</h4>

@@ -28,7 +28,7 @@ const Home = () => {
       <img
       src="https://media.istockphoto.com/photos/student-using-laptop-having-online-class-with-teacher-picture-id1288092444?b=1&k=20&m=1288092444&s=170667a&w=0&h=L968NhkwgRZhpHWoNtdKy_Hk4kNELzb88Jp9Ja5qzWY="
       className="img-thumbnail"
-      alt="...">
+      alt="person studying online">
       </img>
     </Col>
   </Row>
