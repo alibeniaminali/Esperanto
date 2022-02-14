@@ -10,6 +10,7 @@ import AddTeacher from './components/teachers/AddTeacher'
 import AboutUs from './components/teachers/AboutUs'
 import UserProfile from './components/teachers/UserProfile'
 import EditTeacher from './components/teachers/EditTeacher'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
