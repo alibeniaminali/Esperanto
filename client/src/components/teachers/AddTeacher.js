@@ -17,21 +17,25 @@ const AddTeacher = () => {
     const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
+    email: '',
     location: '',
     pricePerHour: '',
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
+    displayPicture: '',
     })
 
     const [formErrors, setFormErrors] = useState({
     firstName: '',
     lastName: '',
+    email: '',
     location: '',
     pricePerHour: '',
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
+    displayPicture: '',
     })
 
     const handleChange = (e) => {
@@ -73,6 +77,12 @@ const AddTeacher = () => {
               <Form.Control onChange={handleChange} type="text" name="lastName" placeholder="Last Name" defaultValue={formData.lastName} />
               {formErrors.lastName && <Form.Text>{formErrors.lastName}</Form.Text>}
             </Form.Group>
+            {/* Email */}
+            <Form.Group className='mb-2'>
+              <Form.Label htmlFor="email">Email Address</Form.Label>
+              <Form.Control onChange={handleChange} type="email" name="email" placeholder="Email" defaultValue={formData.email} />
+              {formErrors.email && <Form.Text>{formErrors.email}</Form.Text>}
+            </Form.Group>
             {/* Location */}
             <Form.Group className='mb-2'>
               <Form.Label htmlFor="location">Location</Form.Label>
@@ -103,6 +113,10 @@ const AddTeacher = () => {
               <Form.Control onChange={handleChange} type="text" max="500" name="aboutMe" placeholder="Write something about yourself" defaultValue={formData.aboutMe} />
               {formErrors.aboutMe && <Form.Text>{formErrors.aboutMe}</Form.Text>}
             </Form.Group>
+            {/* Upload */}
+            {/* <Form.Group className='text-center mt-4'>
+              <Button variant="warning" type="upload">Upload photo</Button>
+            </Form.Group> */}
             {/* Submit */}
             <Form.Group className='text-center mt-4'>
               <Button variant="warning" type="submit">Submit</Button>
