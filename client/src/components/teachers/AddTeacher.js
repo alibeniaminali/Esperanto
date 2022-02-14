@@ -38,6 +38,7 @@ const AddTeacher = () => {
     aboutMe: '',
     displayPicture: '',
   })
+  
 
   const handleChange = (e) => {
     const newObj = { ...formData, [e.target.name]: e.target.value }

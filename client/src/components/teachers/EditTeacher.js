@@ -13,6 +13,7 @@ const EditTeacher = () => {
   const { teacherId } = useParams()
 
   const [teacherError, setTeacherError] = useState('')
+  
 
   const [formData, setFormData] = useState({
     firstName: '',
