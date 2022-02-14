@@ -22,7 +22,7 @@ const teacherSchema = new Schema({
   teaches: { type: String, required: true },
   alsoSpeaks: [{ type: String }],
   aboutMe: { type: String, maxlength: 500, required: true },
-  displayPicture: { type: String, required: true },
+  displayPicture: { type: String },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   reviews: [reviewSchema],
 })
