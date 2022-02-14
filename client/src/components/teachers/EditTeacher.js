@@ -37,21 +37,19 @@ const EditTeacher = () => {
     aboutMe: '',
     displayPicture: '',
   })
-  
 
   useEffect(() => {
-    // !userIsAuthenticated() && navigate('/login')
+    !userIsAuthenticated() && navigate('/login')
 
     const getTeacher = async () => {
       try {
-        const { data } = await axios.get(`/api/teachers/6204fe8df1ea3271035415e1`,
+        const { data } = await axios.get(`/api/teachers/620a42a7ac81725ab886231c`,
           formData,
           {
             headers: {
               Authorization: `Bearer ${getTokenFromLocalStorage()}`,
             },
           })
-        console.log('data ->', data)
         setFormData(data)
       } catch (err) {
         setTeacherError('Failed to retrieve teacher information. Failed to populate.')
@@ -85,12 +83,8 @@ const EditTeacher = () => {
   }
 
   return (
-    // <>
-    //   <h1>hiya</h1>
-    // </>
     <section className="form-page">
       <Container className='mt-4'>
-        <h1>hello</h1>
         <AddTeacher
           handleSubmit={handleSubmit}
           handleChange={handleChange}
