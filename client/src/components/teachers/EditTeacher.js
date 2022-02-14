@@ -19,7 +19,7 @@ const EditTeacher = () => {
     lastName: '',
     location: '',
     email: '',
-    pricePerHour: 0,
+    pricePerHour: 1,
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
@@ -55,7 +55,7 @@ const EditTeacher = () => {
       }
     }
     getTeacher()
-  }, [teacherId, formData, navigate])
+  }, [teacherId, navigate])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -89,7 +89,7 @@ const EditTeacher = () => {
           handleChange={handleChange}
           formData={formData}
           formErrors={formErrors}
-          teacherError={teacherError}
+        //teacherError={teacherError}
         />
       </Container>
     </section>
