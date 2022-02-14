@@ -1,13 +1,16 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { Link } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+
 
 const Home = () => {
   return (
-
+<>
 <Container fluid>
   <Row className="row1">
     <Col sm={8}>
@@ -77,6 +80,35 @@ const Home = () => {
   </Col>
   </Row>
 </Container>
+<Container fluid>
+  <Row className="footer">
+    <Col sm>Our Logo</Col>
+    <Col sm>Text to lead to home page </Col>
+    <Nav className="me-auto">
+            <NavDropdown title="About this website" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                href="https://www.linkedin.com/in/alibeniaminali/"
+                target="_blank"
+              >
+                Ali Ali
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Dougie Brown
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Peter Bid</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                Elena Gicheva
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                About this website
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+    
+  </Row>
+</Container>
+</>
   )
 }
 
