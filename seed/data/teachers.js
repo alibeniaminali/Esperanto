@@ -8,7 +8,7 @@ export default [
     teaches: 'Bulgarian',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'https://imgur.com/a/pSqrWvq',
+    displayPicture: 'https://i.imgur.com/jnhsiSw.jpg',
   },
   {
     firstName: 'Ali',
@@ -19,7 +19,7 @@ export default [
     teaches: 'Turkish',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'https://imgur.com/a/25EGTOq',
+    displayPicture: 'https://i.imgur.com/HDqdTMO.jpg',
   },
   {
     firstName: 'Peter',
@@ -30,7 +30,7 @@ export default [
     teaches: 'Lugandan',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'https://imgur.com/a/oHzLAnO',
+    displayPicture: 'https://i.imgur.com/fL6erQP.jpg',
   },
   {
     firstName: 'Dougie',
@@ -41,7 +41,7 @@ export default [
     teaches: 'English',
     alsoSpeaks: ['Bullshit'],
     aboutMe: 'Many Many words',
-    displayPicture: 'https://imgur.com/a/gTO0IWA',
+    displayPicture: 'https://i.imgur.com/N9aXPk6.jpg',
   },
   {
     firstName: 'Ryota',
@@ -52,7 +52,7 @@ export default [
     teaches: 'English',
     alsoSpeaks: ['Japanese'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://i.imgur.com/vJpRStf.jpg',
   },
   {
     firstName: 'Takuma',
@@ -63,6 +63,6 @@ export default [
     teaches: 'Japanese',
     alsoSpeaks: ['English'],
     aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://i.imgur.com/8GEZkRf.jpg',
   }
 ]

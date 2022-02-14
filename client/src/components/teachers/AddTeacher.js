@@ -9,7 +9,7 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
 
-const Register = () => {
+const AddTeacher = () => {
 
     // navigate
     const navigate = useNavigate()
@@ -43,12 +43,13 @@ const Register = () => {
     const handleSubmit = async (e) => {
       e.preventDefault() // prevent reload
       try {
-        await axios.post('/api/teachers', {
+        console.log(getTokenFromLocalStorage())
+        await axios.post('/api/teachers', formData, {
           headers: {
             Authorization: `Bearer ${getTokenFromLocalStorage()}`,
           },
-        }, formData)
-        console.log(formData.firstName)
+        })
+        // console.log(formData.firstName)
         navigate('/teachers')
       } catch (err) {
         setFormErrors(err.response.data.errors)
@@ -112,4 +113,4 @@ const Register = () => {
     )
   }
 
-export default Register
+export default AddTeacher

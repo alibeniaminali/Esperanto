@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
+// import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
@@ -32,6 +32,7 @@ const TeachersList = () => {
 
 
     <>
+    <Link to="/addteacher" className='btn btn-warning'>add your teacher ↩️ </Link>
       <form onSubmit={handleSubmit}>
         <input type='text' id='teacherssubmit' placeholder="Choose Your Language" onChange={event => {
           setSearchTerm(event.target.value)
@@ -51,9 +52,9 @@ const TeachersList = () => {
             <Link id="teacher_card_link" to={`/teachers/${teacher._id}`}>
               <Card className="h-100">
                 <Card.Header><h3>{firstName} {lastName}</h3>
-                  <Card.Img src={displayPicture} />
                 </Card.Header>
-                <Card.Body className="text-center">
+                <Card.Body>
+                <Card.Img className='displaypicture_container' src={displayPicture} />
                   <Card.Title><p>{firstName} teaches {teaches}</p></Card.Title>
                   <Card.Text>
                     <p>{firstName} is based in {location}</p>
@@ -74,5 +75,18 @@ const TeachersList = () => {
     </>
   )
 }
+
+
+{/* <div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col"></div> */}
 
 export default TeachersList

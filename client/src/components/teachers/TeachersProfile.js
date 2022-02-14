@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useParams, Link} from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 
 import { getTokenFromLocalStorage } from '../helpers/auth'
@@ -17,8 +17,8 @@ const TeacherProfile = () => {
   // const navigate = useNavigate()
 
   // State
-  const [ teacher, setTeacher ] = useState([])
-  const [ hasError, setHasError ] = useState({ error: false, message: '' })
+  const [teacher, setTeacher] = useState([])
+  const [hasError, setHasError] = useState({ error: false, message: '' })
 
   // Params
   const { teacherId } = useParams()
@@ -47,32 +47,19 @@ const TeacherProfile = () => {
   // }
 
 
-return (
-<Container className="mt-4">
+  return (
+    <Container className="mt-4">
       {teacher ?
-        <div className='teacher-show'>
-          <h2>{teacher.firstName}</h2>
-          <hr />
-          <Row>
-            <Col md="6">
-              <img className='w-100' src={teacher.displayPicture} alt={teacher.firstName}/>
-            </Col>
-            <Col md="6">
-              <h4>About me</h4>
-              <p>{teacher.aboutMe}</p>
-              <hr />
-              <h4> Hello Everyone</h4>
-              <hr />
-              <p className="lead">{teacher.alsoSpeaks}</p>
-              <h4>We Love to teach</h4>
-              <hr />
-              <p className="lead">{teacher.avgRating}</p>
-              {/* { userIsOwner() &&
-                <p>hello owner</p>
-              } */}
-              <Link to="/teachers" className="btn btn-warning">Back to all teachers</Link>
-            </Col>
-          </Row>
+        <div className="teacherProfile">
+          <div><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
+          <div className="teacher-info">
+            <h3>{teacher.firstName} {teacher.lastName}</h3>
+            <p>{teacher.aboutMe}</p>
+            <p>{teacher.alsoSpeaks}</p>
+            <p>{teacher.email}</p>
+            <p>{teacher.location}</p>
+            <p>{teacher.reviews}</p>
+          </div>
         </div>
         :
         <h2 className="text-center">
