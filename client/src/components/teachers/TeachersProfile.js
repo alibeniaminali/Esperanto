@@ -66,7 +66,7 @@ const TeacherProfile = () => {
         },
       })
       // console.log(formData.firstName)
-      // navigate('teachers/:teacherId')
+      navigate(`/teachers/${teacher._id}`)
     } catch (err) {
       setFormErrors(err.response.data.errors)
     }
@@ -83,15 +83,6 @@ const TeacherProfile = () => {
   }
 
 
-  // console.log(review)
-  // console.log(review[0].owner.username)
-
-  // const userIsOwner = () => {
-  //   const payload = getPayload()
-  //   console.log(payload)
-  //   if (!payload) return
-  //   return teacher.owner === payload.sub
-  // }
 
   useEffect(() => {
     if (teacher) { console.log(teacher.reviews) }
@@ -108,8 +99,7 @@ const TeacherProfile = () => {
             <p>{teacher.aboutMe}</p>
             <p>{teacher.alsoSpeaks}</p>
             <p>{teacher.email}</p>
-            {/* <p>User 's' review of {teacher.firstName} is {review[0].text}</p> */}
-            {/* <p>User  rates {teacher.firstName} {review[0].rating} out of 5</p> */}
+            
             {teacher.reviews.length ?
               teacher.reviews.map(review => {
                 return (
@@ -133,10 +123,14 @@ const TeacherProfile = () => {
                 <Form.Control onChange={handleChange} type="number" min="0" max="5" name="rating" placeholder="Rating" />
               </Form.Group>
               <Form.Group className='text-center mt-4'>
-                <Button variant="warning" type="submit">Submit</Button>
+                <Button variant="warning" type="submit">Post Your Review</Button>
               </Form.Group>
             </Form>
+
+            <Button onsubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
+            
             <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
+    
           </div>
         </div>
         :
