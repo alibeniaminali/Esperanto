@@ -38,12 +38,16 @@ const AddTeacher = () => {
     aboutMe: '',
     displayPicture: '',
   })
-  
+
 
   const handleChange = (e) => {
     const newObj = { ...formData, [e.target.name]: e.target.value }
     setFormData(newObj)
     setFormErrors({ ...formErrors, [e.target.name]: '' })
+  }
+
+  const handleImageUrl = (url) => {
+    setFormData({ ...formData, displayPicture: url })
   }
 
   const handleSubmit = async (e) => {
@@ -69,6 +73,7 @@ const AddTeacher = () => {
         <TeacherForm
           handleSubmit={handleSubmit}
           handleChange={handleChange}
+          handleImageUrl={handleImageUrl}
           formData={formData}
           formErrors={formErrors}
         />

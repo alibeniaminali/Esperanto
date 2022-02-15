@@ -5,7 +5,8 @@ import Button from 'react-bootstrap/Button'
 
 import { ImageUploadField } from '../ImageUpload.js'
 
-const TeacherForm = ({ formData, formErrors, handleChange, handleSubmit }) => (
+
+const TeacherForm = ({ formData, formErrors, handleChange, handleSubmit, handleImageUrl }) => (
   <Form onSubmit={handleSubmit} className='mt-4'>
     <Form.Group className='mb-2'>
       <Form.Label htmlFor='firstName'>First Name</Form.Label>
@@ -48,9 +49,8 @@ const TeacherForm = ({ formData, formErrors, handleChange, handleSubmit }) => (
       {formErrors.aboutMe && <Form.Text>{formErrors.aboutMe}</Form.Text>}
     </Form.Group>
     <ImageUploadField
-      value={formData.displayPicture}
       name="displayPicture"
-    // handleImageUrl={handleImageUrl}
+      handleImageUrl={handleImageUrl}
     />
     <Form.Group className='text-center mt-4'>
       <Button variant="warning" type="submit">Submit</Button>

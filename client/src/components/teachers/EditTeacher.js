@@ -13,7 +13,6 @@ const EditTeacher = () => {
   const { teacherId } = useParams()
 
   const [teacherError, setTeacherError] = useState('')
-  
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -24,7 +23,7 @@ const EditTeacher = () => {
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
-    // displayPicture: '',
+    displayPicture: '',
   })
 
   const [formErrors, setFormErrors] = useState({
@@ -36,7 +35,7 @@ const EditTeacher = () => {
     teaches: '',
     alsoSpeaks: [''],
     aboutMe: '',
-    // displayPicture: '',
+    displayPicture: '',
   })
 
   useEffect(() => {
@@ -76,6 +75,10 @@ const EditTeacher = () => {
     }
   }
 
+  const handleImageUrl = (url) => {
+    setFormData({ ...formData, displayPicture: url })
+  }
+
   const handleChange = (e) => {
     const newObj = { ...formData, [e.target.name]: e.target.value }
     setFormData(newObj)
@@ -88,9 +91,10 @@ const EditTeacher = () => {
         <TeacherForm
           handleSubmit={handleSubmit}
           handleChange={handleChange}
+          handleImageUrl={handleImageUrl}
           formData={formData}
           formErrors={formErrors}
-        //teacherError={teacherError}
+          teacherError={teacherError}
         />
       </Container>
     </section>
