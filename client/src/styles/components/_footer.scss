@@ -5,9 +5,8 @@
     background-color: #f6f0ea;
     text-align: center;
     
-    .footer-image {
+    .footer-logo {
         width: 30%;
-        margin-top: 10px;
     }
     .brand {
         a {
@@ -26,6 +25,46 @@
         }
     }
     }
+
+// Browser
+@media (min-width: 575px) {
+
+    .main-footer {
+        background-color: #f6f0ea;
+        text-align: center;
+        .row1 {
+            display: flex;
+            justify-content: flex-end;
+
+        .footer-logo {
+            width: 40%;
+        }
+    }
+        .brand {
+            a {
+                color: black;
+                font-size: 35px;
+                font-family:'Bebas Neue', sans-serif;
+                margin: 0 auto;
+            }
+        }
+        .row {
+            .list-unstyled {
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+        }
+}
+
+
+
+
+
+
+
     //Browser 
     // .brand {
     //     display: flex;

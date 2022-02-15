@@ -5,9 +5,7 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import PeopleTalking from '../images/people-talking-img.png'
-// import Nav from 'react-bootstrap/Nav'
-// import NavDropdown from 'react-bootstrap/NavDropdown'
-// import Navbar from 'react-bootstrap/Navbar'
+import TeacherImg from '../images/join.png'
 
 
 const Home = () => {
@@ -31,6 +29,9 @@ const Home = () => {
       className="img-thumbnail"
       alt="person studying online">
       </img>
+    </Col>
+    <Col sm={3}>
+      <img src={TeacherImg} className="img-thumbnail" alt="animated teacher"></img>
     </Col>
   </Row>
 
@@ -78,19 +79,9 @@ const Home = () => {
   </Card>
   </Col>
   </Row>
-  <Row className="animated-img">
+  <Row className="animated-img-chatting">
     <img src={PeopleTalking} alt="people chatting"></img>
   </Row>
-  {/* <Row>
-  <div className="collaborations">
-    <p>Collaborating with :</p>
-    <div className="collaborations-links">
-    <a href="/">LinkedIn</a>
-    <a href="/">LinkedIn</a>
-    <a href="/">LinkedIn</a>
-    </div>
-  </div>
-</Row> */}
 </Container>
 
 
