@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
-
 // // Browser
 // .hero {
 //   display: flex;
@@ -59,10 +58,8 @@
 @media (max-width: 575px) {
 
     .container-fluid {
-        background-color: #F0F0F0;
             .row {
                 margin: 5px;
-                background-color: #F0F0F0;
                 .col-sm-4 { // Person studying live picture
                     margin-top: 10px;
                     display: none;
@@ -100,10 +97,8 @@
 @media (min-width: 575px) {
 
     .container-fluid {
-        background-color: #F0F0F0;
             .row {
                 margin: 5px;
-                background-color: #F0F0F0;
                 .col-sm-3 {
                     margin-top: 10px;
                     display: none;
@@ -157,9 +152,6 @@
                 align-items: center;
                 padding-top: 30px;
             }
-        }
-        .row1 {
-
         }
     }
 }

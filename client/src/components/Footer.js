@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Container } from 'react-bootstrap'
 import FooterImage from '../images/logo.png'
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
         <div className="main-footer">
             <div className="container">
                 <div className="row">
-                    <div className="row1 col-md-3 col-sm-6">
+                    <div className="logo-container col-md-3 col-sm-6">
                     <img
                         src={FooterImage} className="footer-logo" alt="logo">
                     </img>
@@ -14,15 +15,17 @@ const Footer = () => {
                     <div className="brand col-md-3 col-sm-6">
                         <h4><a href="/" className="all navbar-brand">Esperanto.</a></h4>
                     </div>
-                    <div className="col-md-3 col-sm-6">
+                    <div className="platform col-md-3 col-sm-6">
                         <h4>Platform</h4>
+                        <hr />
                         <ul className="list-unstyled">
                             <li><a href="/login">Login</a></li>
                             <li><a href="/register">Register</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3 col-sm-6">
+                    <div className="socials col-md-3 col-sm-6">
                         <h4>Social</h4>
+                        <hr />
                         <ul className="list-unstyled">
                         <li><a href="/">LinkedIn</a></li>
                         <li><a href="/">GitHub</a></li>

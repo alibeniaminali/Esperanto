@@ -17,10 +17,10 @@ const Home = () => {
       <h1>Esperanto.</h1>
       <h2>Your personal learning portal.</h2>
         <p>
-          Few good word for our beloved website. Few good word for our beloved
-          website. Few good word for our beloved website. Few good word for
-          our beloved website. Few good word for our beloved website.
+        Learn a language early morning, lunchtime, evenings or at weekends. Choose from Arabic, French, German, Greek, Italian, Japanese, Korean, Mandarin, Portuguese, Spanish and Russian. One to one and private group classes also available.
         </p>
+        <p className="nunito">Choose your language and expand your world!</p>
+        
         <Link to="/teachers" className='btn btn-warning'>Find your teacher ↩️ </Link>
     </Col>
     <Col sm={4}>
@@ -81,40 +81,8 @@ const Home = () => {
   </Row>
   <Row className="animated-img-chatting">
     <img src={PeopleTalking} alt="people chatting"></img>
-  </Row>
+  </Row> 
 </Container>
-
-
-{/* <Navbar fixed="bottom">
-<Container fluid>
-  <Row>
-    <Col sm>Our Logo</Col>
-    <Col sm>Text to lead to home page </Col>
-    <Nav className="me-auto">
-            <NavDropdown title="About this website" id="collasible-nav-dropdown">
-              <NavDropdown.Item
-                href="https://www.linkedin.com/in/alibeniaminali/"
-                target="_blank"
-              >
-                Ali Ali
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Dougie Brown
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Peter Bid</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Elena Gicheva
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                About this website
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-    
-  </Row>
-</Container>
-</Navbar> */}
 </>
   )
 }
