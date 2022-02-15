@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterImage from '../images/3.png'
+import FooterImage from '../images/logo.png'
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="row1 col-md-3 col-sm-6">
                     <img
-                        src={FooterImage} className="footer-image" alt="person studying online">
+                        src={FooterImage} className="footer-logo" alt="logo">
                     </img>
                     </div>
                     <div className="brand col-md-3 col-sm-6">

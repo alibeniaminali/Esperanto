@@ -63,8 +63,14 @@
             .row {
                 margin: 5px;
                 background-color: #F0F0F0;
-                .col-sm {
+                .col-sm-4 { // Person studying live picture
                     margin-top: 10px;
+                    display: none;
+                }
+                .col-sm-3 { // Animated picture
+                    img {
+                        border: none;
+                    }
                 }
             }
             .row1 {
@@ -82,10 +88,78 @@
                         width: 100%;
                     }
             }
-            .animated-img {
+            .animated-img-chatting {
                 margin: 20px 0px 0px 0px;
                 background-color: white;
                 padding: 15px 0px 15px 0px;
             }
+    }
+}
+
+// Browser 
+@media (min-width: 575px) {
+
+    .container-fluid {
+        background-color: #F0F0F0;
+            .row {
+                margin: 5px;
+                background-color: #F0F0F0;
+                .col-sm-3 {
+                    margin-top: 10px;
+                    display: none;
+                    
+                }
+                .col-sm-4 {
+                    img {
+                        padding-top: 15px;
+                        border: none;
+                    }
+                }
+            }
+            .row1 {
+                background-color: white;
+                padding: 0px 0px 15px 0px;
+                margin: 20px 0px 0px 0px;
+            }
+            .row2 {
+                width: 100%;
+                display: none;
+            }
+            h1, h2 {
+                font-family:'Bebas Neue', sans-serif;
+            }
+            .col-sm-8 {
+                padding: 50px;
+                    .btn {
+                        margin-top: 15px;
+                        width: 100%;
+                    }
+            }
+            .animated-img-chatting {
+                // margin: 20px 0px 0px 0px;
+                // background-color: white;
+                // padding: 15px 0px 15px 0px;
+                width: 45%;
+            }
+    }
+    .main-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:auto;
+        background-color: aqua;
+        color: black;
+        text-align: center;
+        .row { // Esperanto link text
+            .brand {
+                display: flex;
+                align-items: center;
+                padding-top: 30px;
+            }
+        }
+        .row1 {
+
+        }
     }
 }
