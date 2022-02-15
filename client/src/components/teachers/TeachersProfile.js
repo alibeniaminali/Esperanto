@@ -8,21 +8,18 @@ import { getTokenFromLocalStorage } from '../helpers/auth'
 
 
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import TeachersList from './TeachersList'
 
 const TeacherProfile = () => {
 
   // Global variables
   const navigate = useNavigate()
   const { teacherId } = useParams()
+  const { reviewId } = useParams()
 
   // State
   const [teacher, setTeacher] = useState(null)
-  // const [review, setReview] = useState([])
   const [hasError, setHasError] = useState({ error: false, message: '' })
 
   const [formData, setFormData] = useState({
@@ -35,7 +32,6 @@ const TeacherProfile = () => {
     rating: '',
   })
 
-
   useEffect(() => {
     const getSingleTeacher = async () => {
       try {
@@ -45,7 +41,6 @@ const TeacherProfile = () => {
           },
         })
         setTeacher(data)
-        // setReview(data.reviews)
       } catch (err) {
         setHasError({ error: true, message: err.message })
       }
@@ -53,28 +48,35 @@ const TeacherProfile = () => {
     getSingleTeacher()
   }, [teacherId])
 
+  const handleDelete = async (e) => {
+    e.preventDefault()
+    console.log(this.props)
+    try {
 
-
+      await axios.delete(`/api/teachers/${teacherId}/reviews/${reviewId}`, {
+        headers: {
+          Authorization: `Bearer ${getTokenFromLocalStorage()}`,
+        },
+      })
+      // navigate(`/${teacherId}`)
+    } catch (err) {
+      console.log('yikes')
+    }
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault() // prevent reload
+    e.preventDefault()
     try {
-      console.log(getTokenFromLocalStorage())
       await axios.post(`/api/teachers/${teacherId}/reviews`, formData, {
         headers: {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      // console.log(formData.firstName)
-      navigate(`/teachers/${teacher._id}`)
+      navigate(`${teacherId}`)
     } catch (err) {
       setFormErrors(err.response.data.errors)
     }
   }
-
-
-
-
 
   const handleChange = (e) => {
     const newObj = { ...formData, [e.target.name]: e.target.value }
@@ -82,12 +84,9 @@ const TeacherProfile = () => {
     setFormErrors({ ...formErrors, [e.target.name]: '' })
   }
 
-
-
   useEffect(() => {
     if (teacher) { console.log(teacher.reviews) }
   }, [teacher])
-
 
   return (
     <Container className="mt-4">
@@ -99,21 +98,16 @@ const TeacherProfile = () => {
             <p>{teacher.aboutMe}</p>
             <p>{teacher.alsoSpeaks}</p>
             <p>{teacher.email}</p>
-            
             {teacher.reviews.length ?
-              teacher.reviews.map(review => {
+              teacher.reviews.map((review, i) => {
                 return (
                   <>
-                    <p>User {review.owner.username}'s' review of {teacher.firstName} is {review.text}</p>
-                    <p>User {review.owner.username} rates {teacher.firstName} {review.rating} out of 5</p>
+                    <p key={i} >{review.text}<br />Rating: {review.rating} / 5 <br />Review by {review.owner.username}</p>
                   </>
                 )
               })
-
-
-
               : <p>No Reviews Yet</p>}
-            <Form onSubmit={handleSubmit} className='mt-4'>
+            <Form className='mt-4'>
               <Form.Group className='mb-2'>
                 <Form.Label htmlFor='text'>Enter Your Review Here</Form.Label>
                 <Form.Control onChange={handleChange} type="text" name="text" placeholder="Review text" />
@@ -123,14 +117,14 @@ const TeacherProfile = () => {
                 <Form.Control onChange={handleChange} type="number" min="0" max="5" name="rating" placeholder="Rating" />
               </Form.Group>
               <Form.Group className='text-center mt-4'>
-                <Button variant="warning" type="submit">Post Your Review</Button>
+                <Button onSubmit={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
+              </Form.Group>
+              <Form.Group>
+                <Button onSubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
               </Form.Group>
             </Form>
-
-            <Button onsubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
-            
             <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
-    
+
           </div>
         </div>
         :
@@ -141,6 +135,5 @@ const TeacherProfile = () => {
     </Container>
   )
 }
-
 
 export default TeacherProfile
