@@ -18,6 +18,7 @@ const TeacherProfile = () => {
 
   // State
   const [teacher, setTeacher] = useState([])
+  const [review, setReview] = useState([])
   const [hasError, setHasError] = useState({ error: false, message: '' })
 
   // Params
@@ -32,12 +33,15 @@ const TeacherProfile = () => {
           },
         })
         setTeacher(data)
+        setReview(data.reviews)
       } catch (err) {
         setHasError({ error: true, message: err.message })
       }
     }
     getSingleTeacher()
   }, [teacherId])
+
+  // console.log(review[0].owner.username)
 
   // const userIsOwner = () => {
   //   const payload = getPayload()
@@ -57,8 +61,10 @@ const TeacherProfile = () => {
             <p>{teacher.aboutMe}</p>
             <p>{teacher.alsoSpeaks}</p>
             <p>{teacher.email}</p>
-            <p>{teacher.location}</p>
-            <p>{teacher.reviews}</p>
+            {/* <p>User 's' review of {teacher.firstName} is {review[0].text}</p> */}
+            {/* <p>User  rates {teacher.firstName} {review[0].rating} out of 5</p> */}
+            {/* <p>User {review[0].owner.username}'s' review of {teacher.firstName} is {review[0].text}</p>
+            <p>User {review[0].owner.username} rates {teacher.firstName} {review[0].rating} out of 5</p> */}
             <Link to={`/editteacher/${teacher._id}`}className='btn btn-warning'> Edit this teacher ↩️ </Link>
           </div>
         </div>
