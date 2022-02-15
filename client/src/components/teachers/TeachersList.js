@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
-import Select from 'react-select'
+// import Select from 'react-select'
 
 import { Link } from 'react-router-dom'
 
@@ -31,12 +31,13 @@ const TeachersList = () => {
 
   }
 
-  const options = teachers.map(teacher => {
-    return {
-      label: teacher.teaches,
-      value: teacher.teaches
-    }
-  })
+  // const options = teachers.map(teacher => {
+  //   return {
+  //     label: teacher.teaches,
+  //     value: teacher.teaches
+  //   }
+  // })
+  // console.log(options)
 
   return (
 
@@ -44,12 +45,12 @@ const TeachersList = () => {
     <>
       <Link to="/addteacher" className='btn btn-warning'>add yourself as a teacher ↩️ </Link>
       <p className='lead'>Search from {teachers.length} teachers</p>
-      <Select
+      {/* <Select
         className='search-line'
         placeholder='Search...'
         options={options}
         onChange={opt => console.log(opt)}
-      />
+        /> */}
       <div className='form_container'>
         <Form onSubmit={handleSubmit}>
           <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
