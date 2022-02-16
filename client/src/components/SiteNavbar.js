@@ -17,7 +17,7 @@ const SiteNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="About us" id="collasible-nav-dropdown">
+            <NavDropdown title="About" id="collasible-nav-dropdown">
               <NavDropdown.Item
                 href="https://www.linkedin.com/in/alibeniaminali/"
                 target="_blank"
@@ -32,7 +32,7 @@ const SiteNavbar = () => {
                 Elena Gicheva
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/aboutus">
                 About this website
               </NavDropdown.Item>
             </NavDropdown>
