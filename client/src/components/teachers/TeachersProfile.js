@@ -4,7 +4,7 @@ import { useParams, Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 
-import { getTokenFromLocalStorage } from '../helpers/auth'
+import { getTokenFromLocalStorage, getPayload } from '../helpers/auth'
 
 
 import Container from 'react-bootstrap/Container'
@@ -47,6 +47,25 @@ const TeacherProfile = () => {
     }
     getSingleTeacher()
   }, [teacherId])
+
+  const deleteTeacher = async () => {
+    try {
+      await axios.delete(`/api/teachers/${teacherId}`, {
+        headers: {
+          Authorization: `Bearer ${getTokenFromLocalStorage()}`,
+        },
+      })
+      navigate('/teachers')
+    } catch (error) {
+      console.log('woah woah')
+    }
+  }
+
+  const userIsOwner = () => {
+    const payload = getPayload()
+    if (!payload) return
+    return teacher.owner === payload.sub
+  }
 
   // const handleDelete = async (e) => {
   //   e.preventDefault()
@@ -94,9 +113,10 @@ const TeacherProfile = () => {
           <div className="profile_image_container"><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
           <div className="teacher-info">
             <h3>{teacher.firstName} {teacher.lastName}</h3>
-            <p>{teacher.aboutMe}</p>
-            <p>{teacher.alsoSpeaks}</p>
-            <p>{teacher.email}</p>
+            <p>About {teacher.firstName}: {teacher.aboutMe}</p>
+            <p>Teaching: {teacher.teaches}</p>
+            <p>Also speaks: {teacher.alsoSpeaks.join(', ')}</p>
+            <p>Contact email: {teacher.email}</p>
             {teacher.reviews.length ?
               teacher.reviews.map((review, i) => {
                 return (
@@ -118,20 +138,22 @@ const TeacherProfile = () => {
               <Form.Group className='text-center mt-4'>
                 <Button onSubmit={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
               </Form.Group>
-              {/* <Form.Group>
-                <Button onSubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
-              </Form.Group> */}
+              {userIsOwner() &&
+                <div className="buttons mb-4">
+                  <Button variant='danger' onClick={deleteTeacher}>Delete teacher</Button>
+                </div>
+              }
             </Form>
-
-            {/* <Button onsubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button> */}
-
-            <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
-
+            {userIsOwner() &&
+              <div className="buttons mb-4">
+                <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
+              </div>
+            }
           </div>
         </div>
         :
         <h2 className="text-center">
-          {hasError.error ? 'Oh something went wrong, the sadness 😞' : 'Loading...'}
+          {hasError.error ? 'You need to log in buddy' : 'Loading...'}
         </h2>
       }
     </Container>
