@@ -61,6 +61,18 @@ const TeachersList = () => {
         options={options}
         onChange={opt => console.log(opt)}
         /> */}
+      
+      <div className='form_container'>
+        <Form onSubmit={handleSubmit}>
+          <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
+          <Form.Control
+            type="password"
+            id="inputPassword5"
+            aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
+              setSearchTerm(event.target.value)
+            }} />
+        </Form>
+      </div>
       <form onChange={handleChange}>
         <label>Search by max price </label>
         <select>
@@ -73,17 +85,6 @@ const TeachersList = () => {
           <option value="30">£35</option>
         </select>
       </form>
-      <div className='form_container'>
-        <Form onSubmit={handleSubmit}>
-          <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
-          <Form.Control
-            type="password"
-            id="inputPassword5"
-            aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
-              setSearchTerm(event.target.value)
-            }} />
-        </Form>
-      </div>
       <ul className='teachers_list'></ul>
       <Container className='teachers_container'>{teachers && teachers.filter((teachers) => {
         if (searchTerm === '') {
