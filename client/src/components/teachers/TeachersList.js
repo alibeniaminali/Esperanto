@@ -66,8 +66,6 @@ const TeachersList = () => {
         <Form onSubmit={handleSubmit}>
           <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
           <Form.Control
-            type="password"
-            id="inputPassword5"
             aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
               setSearchTerm(event.target.value)
             }} />
