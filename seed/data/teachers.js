@@ -40,7 +40,7 @@ export default [
     pricePerHour: 8,
     teaches: 'Inuit',
     alsoSpeaks: ['English'],
-    aboutMe: 'After being abandoned as a child at sea. I was found by an uncontacted eskimo tribe on a fishing trip who took me in and shared with me the secrets of their life. After saving the prince from thirteen rabid polar bears with just a frozen salmon they allowed me to leave and so I decided to use the language I learned to make a living. Tavvauvusi',
+    aboutMe: 'After being abandoned as a child at sea, I was found by an uncontacted eskimo tribe on a fishing trip who took me in and shared with me the secrets of their life. After saving the prince from thirteen rabid polar bears with just a frozen salmon they allowed me to leave and so I decided to use the language I learned to make a living. Tavvauvusi',
     displayPicture: 'https://i.imgur.com/N9aXPk6.jpg',
   },
   {
@@ -106,7 +106,7 @@ export default [
     pricePerHour: 7,
     teaches: 'Afrikaans',
     alsoSpeaks: ['Dutch', 'Lugandan', 'English'],
-    aboutMe: 'Kodi here! I\'m a language enthusiast and love helping spread the words! It might not be allowed but directly email me and we won\'t have to o through this site',
+    aboutMe: 'Kodi here! I\'m a language enthusiast and love helping spread the words! It might not be allowed but directly email me and we won\'t have to go through this site',
     displayPicture: 'https://i.imgur.com/qBYzcQB.jpg',
   },
   {
@@ -150,7 +150,7 @@ export default [
     pricePerHour: 11,
     teaches: 'Farsi',
     alsoSpeaks: ['English'],
-    aboutMe: 'woah',
+    aboutMe: 'hello, I\'m your friendly Farsi teacher. My Method is based on conversation and I think that in order to speak a language fluently you have to become familiar with the culture, for that I use supports like podcasts, videos, songs or memes about various subjects that we can discuss later on. Of course it will be adapted to your level.',
     displayPicture: 'https://i.imgur.com/g93k01p.jpg',
   },
   {
@@ -161,7 +161,7 @@ export default [
     pricePerHour: 11,
     teaches: 'Turkish',
     alsoSpeaks: ['Spanish'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'If you wish to study the language or just practice it on your level, I\'ll be happy to help you.',
     displayPicture: 'https://i.imgur.com/u8jAa91.jpg',
   },
   {
@@ -172,7 +172,7 @@ export default [
     pricePerHour: 8,
     teaches: 'French',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
+    aboutMe: 'I\'m a French teacher a tour guide. I\'ve been guiding tourists in the most beautiful places of my favorite city for more than 10 years. I love art, history, beauty. I like travelling around the world and learning about new cultures.',
     displayPicture: 'https://i.imgur.com/waNaDjl.jpg',
   },
   {
@@ -183,7 +183,7 @@ export default [
     pricePerHour: 9,
     teaches: 'French',
     alsoSpeaks: ['English', 'Potuguese'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'On my lessons we talk a lot, discuss interesting topics, watch various videos. I can motivate my students on studying, can explain difficult material in an easy way. There are 2 ways of lessons : just talking like friends or studying grammar and learning vocabulary with a teacher.',
     displayPicture: 'https://i.imgur.com/Phg3Yuz.jpg',
   },
   {
@@ -194,7 +194,7 @@ export default [
     pricePerHour: 10,
     teaches: 'French',
     alsoSpeaks: ['Dutch', 'Spanish'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'Hi I\'m Hayden. I have studied law and politics but I\'ve always been passionate about traveling and languages. I long wanted to become a writer and I have a strong interest in arts. I teach mostly adults from beginner level to advanced',
     displayPicture: 'https://i.imgur.com/l3ZnpYi.jpg',
   },
   {
@@ -205,7 +205,7 @@ export default [
     pricePerHour: 12,
     teaches: 'French',
     alsoSpeaks: ['German'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'I am a professional language teacher. I have been teaching French for more than 9 years. I teach in language schools, in companies. I give private lessons and I also teach through Skype. ',
     displayPicture: 'https://i.imgur.com/UQzagcT.jpg',
   },
   {
@@ -216,7 +216,7 @@ export default [
     pricePerHour: 12,
     teaches: 'French',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
+    aboutMe: 'My lessons are suitable for all levels: beginner, intermediate and advanced. My method will depend on the age group of the student and I will base myself on the adequate and effective supports for each person. According to the shortcomings and the needs of each student, I will use what is necessary for understanding and assimilation to be at best.',
     displayPicture: 'https://i.imgur.com/YiSR9tN.jpg',
   },
   {
@@ -227,7 +227,7 @@ export default [
     pricePerHour: 10,
     teaches: 'French',
     alsoSpeaks: ['Flemish', 'English'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'Hello from Brussels. I offer DROP-IN GROUP CLASSES for Adults (Grammar, Phrasal Verbs, Collocations and Idioms). PRE-LAUNCH SALE !!!!15% OFF DROP IN Group Classes for Adults!!!',
     displayPicture: 'https://i.imgur.com/6u47PzT.jpg',
   },
   {
@@ -238,7 +238,7 @@ export default [
     pricePerHour: 15,
     teaches: 'English',
     alsoSpeaks: ['Arabic', 'French', 'Spanish', 'German'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'Hello, I am Zena. I started out as a Flight Attendant and through being exposed to different languages I was persuaded by a passenger, who was a linguistics professor, to pursue a degree in Linguistics. I very quickly followed his advice and from there I went on to teach in Oxford.',
     displayPicture: 'https://i.imgur.com/wwkejFf.jpg',
   },
   {
@@ -249,7 +249,7 @@ export default [
     pricePerHour: 8,
     teaches: 'English',
     alsoSpeaks: ['Gaelic'],
-    aboutMe: 'Many Many words',
+    aboutMe: 'My classes are mainly conversational. I put emphasis on correct pronunciation and methods so that people who are not familiar with the languages, can imitate the sounds that they are not used to making and that in a short time they have an excellent pronunciation. Sometimes I create guides based on what they have told me and what I see they need, all to reinforce the teaching in a more comprehensive way.',
     displayPicture: 'https://i.imgur.com/uEphKN1.jpg',
   },
   {
@@ -260,8 +260,8 @@ export default [
     pricePerHour: 10,
     teaches: 'English',
     alsoSpeaks: ['Spanish', 'Hindi'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am Gilbert, a native English speaker with over 3 years of teaching. My Bachelor\'s degree is in Marketing and my Master\'s degree is in Marketing Communications.',
+    displayPicture: 'https://i.imgur.com/SqEnod7.jpg',
   },
 
   {
@@ -272,8 +272,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Spanish',
     alsoSpeaks: ['German', 'English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, my name is Yousif. My teaching method is very dinamic, communicative, practical and participatory. I adapt to the interests and needs of each student.  We can focus on grammar, conversation, pronunciation, vocabulary, listening or reading comprehension, or any other specific topics that you want to address.',
+    displayPicture: 'https://i.imgur.com/ApGBZeT.jpg',
   },
 
   {
@@ -284,8 +284,8 @@ export default [
     pricePerHour: 7,
     teaches: 'Spanish',
     alsoSpeaks: ['Afrikaans', 'English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, I\'m Jaskaran. Whether you want to build confidence in speaking or you are preparing a trip to a Spanish country or you are simply wanting to improve your spanish',
+    displayPicture: 'https://i.imgur.com/NmtFsRi.jpg',
   },
 
   {
@@ -296,8 +296,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Spanish',
     alsoSpeaks: ['English', 'Persian'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi, I\'m Livia. I\'m an empathic person and committed to everything I do. So I think I can be a good choice as a teacher. I have an easygoing personality so I\'m a very talkactive person.',
+    displayPicture: 'https://i.imgur.com/udfcaBG.jpg',
   },
 
   {
@@ -308,8 +308,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Spanish',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I always try to make my classes interactive and I am always open to hear comments to improve, to help you in the way that suits you to improve your skills. I hope we can have class together and improve your Spanish.',
+    displayPicture: 'https://i.imgur.com/9JWSkHJ.jpg',
   },
 
   {
@@ -320,8 +320,8 @@ export default [
     pricePerHour: 13,
     teaches: 'Yiddish',
     alsoSpeaks: ['Arabic', 'English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, welcome to my profile. I have years of experience as a teacher. I have been teaching Hebrew and Judaic studies at local Temples for the past two decades; I taught college physics at the local community college and delivered many professional classes all over the world in my capacity as a software engineer.',
+    displayPicture: 'https://i.imgur.com/3Hs9daT.jpg',
   },
 
   {
@@ -332,8 +332,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Yiddish',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I was born and raised in Israel, I am a native Yiddish speaker. I have experience teaching all age groups and adapt my teaching method to fit the individual needs - they include  conversation, as well as, movement and songs.',
+    displayPicture: 'https://i.imgur.com/4i1EpHJ.jpg',
   },
 
   {
@@ -344,8 +344,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Yiddish',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have a degree in Social Science and a I\'m a certified teacher. I believe that using different engaging activities keep students interested, motivated and support their learning. During the lessons we can use different materials: books, exercises, articles, listening and conversational, games, music and videos. I have made a lot of authentic material.',
+    displayPicture: 'https://i.imgur.com/LOa6Xzz.jpg',
   },
 
   {
@@ -356,8 +356,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Polish',
     alsoSpeaks: ['Italian', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I would like to support you to meet your individual learning goals; whether you aim to learn grammar, specific vocabular, conversational skills etc. The aim of the first lesson is to evaluate your level and to set up learning goals.  We will talk about the different ways of learning (visual, auditory, reading/writing and kinesthetic) and make a plan according to your learning style and preferences.',
+    displayPicture: 'https://i.imgur.com/9krfVmz.jpg',
   },
 
   {
@@ -368,8 +368,8 @@ export default [
     pricePerHour: 6,
     teaches: 'Polish',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have a degree in Social Science and a I\'m a certified teacher. I started by teaching beginner Polish to immigrants in 2015. Later I got my certificate in teaching and since then I have taught Polish online and offline. ',
+    displayPicture: 'https://i.imgur.com/KHYqm55.jpg',
   },
 
   {
@@ -380,8 +380,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Polish',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Isha and I\'m a native Polish speaker. !!!Cancellation or rescheduling is possible only 24hrs (or more) before the lesson. After that, no rescheduling is accepted and the lesson will be considered as complete. No exceptions. Thank you.!!!',
+    displayPicture: 'https://i.imgur.com/nSPkXPW.jpg',
   },
 
   {
@@ -393,7 +393,7 @@ export default [
     teaches: 'Polish',
     alsoSpeaks: ['Spanish', 'English'],
     aboutMe: 'Honestly, I had to write so many of these things what were the odds you would click on this one?!? If you did though, send me an email at dougie-b@hotmail.com and I\'ll give you a totally worth it prize',
-    displayPicture: 'IMAGE',
+    displayPicture: 'https://i.imgur.com/oAaP5AD.jpg',
   },
 
   {
@@ -404,8 +404,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Finnish Suomi',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi there, my name is Luciana. My lessons are highly personalized. I offer grammar lessons as well as only conversations, but of course we can do both, depending on what exactly do you need. After each lesson, you will get feedback from me.',
+    displayPicture: 'https://i.imgur.com/7xxwXME.jpg',
   },
 
   {
@@ -416,8 +416,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Finnish Suomi',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I always support the student and believe that all students can be successful. In my classes I offer a variety of techniques: we can work on vocabulary, pronunciation and communication - whatever you want. We will talk about different topics that interest you. On lessons we can use a material with interactive presentations, articles and pictures. I can offer homework if you want. ',
+    displayPicture: 'https://i.imgur.com/4F1ZVC2.jpg',
   },
 
   {
@@ -428,8 +428,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Finnish Suomi',
     alsoSpeaks: ['Swedish'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi, I\'m Una. I teach mainly through conversation practice, so I would like you to talk, think and speak in Finnish. In our first class, the first few minutes we will cover the basics to get to know each other, and I can have a better idea of the things you like to talk about and your goals.',
+    displayPicture: 'https://i.imgur.com/vOKoBJ5.jpg',
   },
 
   {
@@ -440,8 +440,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Finnish Suomi',
     alsoSpeaks: ['English', 'Mandarin Chinese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi! I\'m Sylvie. I implement an individual approach depending on the level of language knowledge, on the wishes and interests of a student. I\'m friendly and I have a respectful attitude towards every student. There is humor in the lesson :)',
+    displayPicture: 'https://i.imgur.com/Pz6UGwc.jpg',
   },
 
   {
@@ -452,8 +452,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Mandarin Chinese',
     alsoSpeaks: ['English', 'German'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I\'m eperienced with students from different levels. My students come from US, Russia, Poland, Italy, Spain, France, Germany, Israel, etc. Many long-term students have already taken 50+ lessons with me. Even you are just a beginner, I can explain important pronunciation or grammar rules clearly in English or German.',
+    displayPicture: 'https://i.imgur.com/02E68KW.jpg',
   },
 
   {
@@ -464,8 +464,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Mandarin Chinese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I received my Bachelor\'s degree from one of China\'s best linguistic universities. Besides teaching and learning languages I enjoy singing, playing guitar, reading literature and calligraphy.',
+    displayPicture: 'https://i.imgur.com/MJZYFl1.jpg',
   },
 
   {
@@ -476,8 +476,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Mandarin Chinese',
     alsoSpeaks: ['English', 'Japanese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I believe in achieving great things and I know I can help you, reach your goals. I am interested in helping people who is really struggling with the Chinese language. ',
+    displayPicture: 'https://i.imgur.com/6BwPE7u.jpg',
   },
 
   {
@@ -488,8 +488,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Mandarin Chinese',
     alsoSpeaks: ['French', 'Arabic'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am from Hubei province, the exact province that Wuhan, a city of heroes belongs to. The place I lived was quiet and beautiful, so it influenced my personality to be amicable, easy-going and even kind of aloofness. However, I am really into introducing Chinese culture to people who are interested in it ',
+    displayPicture: 'https://i.imgur.com/1fYwtIc.jpg',
   },
 
   {
@@ -500,8 +500,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Mandarin Chinese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I\'m a native Chinese speaker who was born and raised in Chengdu which is famous for spicy hot pot and cute pandas. I\'m a professional Chinese teacher with more 3 years working experience.',
+    displayPicture: 'https://i.imgur.com/JBODeOI.jpg',
   },
 
   {
@@ -512,8 +512,8 @@ export default [
     pricePerHour: 8,
     teaches: 'German',
     alsoSpeaks: ['English', 'Portuguese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Willkomen! I am very patient, don\'t hesitate to ask whenever and whatever you want!',
+    displayPicture: 'https://i.imgur.com/ZBpFHCy.jpg',
   },
 
   {
@@ -524,8 +524,8 @@ export default [
     pricePerHour: 8,
     teaches: 'German',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, my name is Fahad. Languages for me should be fun and are the best way to learn about people in other countries and about their cultures. And, of course, a language can open doors and help you to actively participate in life, for instance, when you are living in a foreign country. ',
+    displayPicture: 'https://i.imgur.com/LQJNsZ1.jpg',
   },
 
   {
@@ -536,8 +536,8 @@ export default [
     pricePerHour: 7,
     teaches: 'German',
     alsoSpeaks: ['Italian', 'Arabic'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello. You are all welcome - no matter your current level of German!! :-) However, I am no professional teacher and thus I am not qualified to offer you grammar sessions. My lessons are focused on practicing in a relaxed and fun environment.',
+    displayPicture: 'https://i.imgur.com/sqq4i8z.jpg',
   },
 
   {
@@ -548,8 +548,8 @@ export default [
     pricePerHour: 10,
     teaches: 'German',
     alsoSpeaks: ['English', 'Arabic'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am an MBA student, certified to teach you from level 0 to fluent. I come from a family of teachers. I had several opportunities to teach German to primary school classes and loved it. ',
+    displayPicture: 'https://i.imgur.com/PR0IQlg.jpg',
   },
 
   {
@@ -560,8 +560,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Arabic',
     alsoSpeaks: ['English', 'Russian'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Andrei. I was born in Russia, grew up in Cairo and now live in London. My lessons will be dynamic and personalized depending on each students goal to help my students get the maximum out of each lesson.',
+    displayPicture: 'https://i.imgur.com/SRoV4JN.jpg',
   },
 
   {
@@ -572,8 +572,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Arabic',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Welcome to my profile. I can help you to learn Arabic in an easy and simple way and develop your language skills such as reading, listening, speaking and writing, whatever your level in the language',
+    displayPicture: 'https://i.imgur.com/TACnfFT.jpg',
   },
 
   {
@@ -584,8 +584,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Arabic',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Layla and I am from Dubai. I have been teaching Arabic for ten years now, in institutes and my private clients. I have taught students from different cultures and varied ages. I have taught children as well as adults',
+    displayPicture: 'https://i.imgur.com/v9FgTWl.jpg',
   },
 
   {
@@ -596,8 +596,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Arabic',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am a professional online Arabic teacher, and I specialize in teaching Modern Standard Arabic (MSA). I have a B.A degree from Al Azhar University in Arabic language and Islamic sciences. I can help you learn Arabic.',
+    displayPicture: 'https://i.imgur.com/XdzN9wL.jpg',
   },
 
   {
@@ -608,8 +608,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Russian',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi guys, Anya here :) I was born and raised in Ukraine, my mother tongue languages are Ukrainian, and Russian. My lessons are very fun and useful at the same time because I believe a happy student is a successful student',
+    displayPicture: 'https://i.imgur.com/10i7zHi.jpg',
   },
 
   {
@@ -620,8 +620,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Russian',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello everyone, my name is Andrey. I\'ve decided to teach because I like meeting new people, and love helping others, so it\'s like a hobby for me.',
+    displayPicture: 'https://i.imgur.com/zgzX1Rv.jpg',
   },
 
   {
@@ -632,8 +632,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Russian',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello and welcome, my name is Pyotr. I am from Russia, Russian is my mother tongue. I have a law degree and had worked as a lawyer and HR manager. I am interested in many things, I like to travel, learn new things, acquire new knowledge, communicate with people and much more. I am an open and outgoing person.',
+    displayPicture: 'https://i.imgur.com/aWNI3gW.jpg',
   },
 
   {
@@ -644,8 +644,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Russian',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi there, I\'m Ivan. I do not promise that you will reach fluency, because this is not the teacher\'s job, rather the student\'s job. However, I promise to support all of my students, giving them many tips that will help reaching fluency as soon as possible and also helping them to make the language learning journey as pleasant as it should be!',
+    displayPicture: 'https://i.imgur.com/P3lbQO1.jpg',
   },
 
   {
@@ -656,8 +656,8 @@ export default [
     pricePerHour: 7,
     teaches: 'Portuguese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Husband, drummer and excited about foreign languages. I\'ve learned several foreign languages myself and helped many people to earn confidence in their language learning! I felt in love with it to the point where I started helping people through language couching. It helped many friends and their fluency was my reward.',
+    displayPicture: 'https://i.imgur.com/hAzwfwE.jpg',
   },
 
   {
@@ -668,8 +668,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Portuguese',
     alsoSpeaks: ['English', 'Spanish'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi friends, my name is Roma and I love teaching my native language Portugies. Our lessons will be very practical and between the Activities, the main thing is speak as much as We can and based in your Portuguese level, I will give different kind of lessons, activities and homework that you can practice your writing, reading and listening.',
+    displayPicture: 'https://i.imgur.com/X10jqES.jpg',
   },
 
   {
@@ -680,8 +680,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Portuguese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have been teaching private lessons around quite a time now and I am currently in University studying "Letras", that is equivalent to a Linguistic course. I don\'t believe in "learn grammar method", so let\'s talk and be free to grow your languages skills first to communicate and express yourself and with that you can develop even more your skills.',
+    displayPicture: 'https://i.imgur.com/KSnde1C.jpg',
   },
 
   {
@@ -692,8 +692,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Portuguese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi, my name is Joao, I am from Brazil specifically on the state of São Paulo and I like many things as movies, music, sports and between those things languages and not so much time after I started learning languages I realize, that I want to help people to find their way to speak my language',
+    displayPicture: 'https://i.imgur.com/SPuwKVD.jpg',
   },
 
   {
@@ -704,8 +704,8 @@ export default [
     pricePerHour: 14,
     teaches: 'Japanese',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I want to know your purpose or goal and we\'ll make your own learning plan together. For beginners we can start from greetings Konnichiwa Arigato, explain the outline of Japanese and words in the class room. For intermediate und upper students , focus your witness and improve your abilities.Please tell me your goal , to pass an examination ? find a Japanese friend ? watching Anime in Japanese? ',
+    displayPicture: 'https://i.imgur.com/6TsATaG.jpg',
   },
 
   {
@@ -716,8 +716,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Japanese',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I provide singing lessons! Choose your favorite Japanese songs. I will explain the meanings of lyrics grammatically',
+    displayPicture: 'https://i.imgur.com/7VylbOE.jpg',
   },
 
   {
@@ -728,8 +728,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Japanese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I was born and grown up  in Tokyo so I\'m a native Japanese speaker. I provide grammar and conversation lessons. If you are interested in my lesson, feel free to message me!',
+    displayPicture: 'https://i.imgur.com/QMFJHoZ.jpg',
   },
 
   {
@@ -740,8 +740,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Japanese',
     alsoSpeaks: ['English', 'French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have been teaching Japanese for 5 years (4 years as a volunteer & 1 year as a career). I will suggest the best lesson up to your demands and level.',
+    displayPicture: 'https://i.imgur.com/pXXsz0B.jpg',
   },
 
   {
@@ -752,8 +752,8 @@ export default [
     pricePerHour: 14,
     teaches: 'Japanese',
     alsoSpeaks: ['English', 'Dutch'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Certified 5 years experienced Japanese Teacher! I can see the language not as a native but also as a second language. not all of them can do it. I am Native Japanese speaker but I also know Japanese grammars as a second language(totally different).',
+    displayPicture: 'https://i.imgur.com/rUdeWbR.jpg',
   },
 
   {
@@ -764,8 +764,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Japanese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have a bachelor degree in Japanese Language Education in the National university. I got a license as a Japanese teacher. At the university, I studied the proper ways of teaching to non-Native Japanese speakers.',
+    displayPicture: 'https://i.imgur.com/4i4J4ME.jpg',
   },
 
   {
@@ -776,8 +776,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Hindi',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Rishima. I have lived in London for 10 years and speak English but my native tongue is Hindi. Since my childhood I have always been delighted to explain something to other people. Einstein says: If you can\'t explain it simply, you don\'t understand it well enough. Explaining something in a simple way is one of my abilities that I really trust.',
+    displayPicture: 'https://i.imgur.com/1JHzfCu.jpg',
   },
 
   {
@@ -788,8 +788,8 @@ export default [
     pricePerHour: 11,
     teaches: 'Hindi',
     alsoSpeaks: ['French'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Harriet. What I am sure about myself is my ability of explaining anything to anyone no matter what their ages or levels are. I implement active and interactive spontaneous teaching methods such as story telling with pictures and etc. beside mature techniques.',
+    displayPicture: 'https://i.imgur.com/zn3m2y3.jpg',
   },
 
   {
@@ -800,8 +800,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Hindi',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hi everyone, I\'m Prem. I\'m a qualified teacher. Depending on your individual wishes, I am happy to prepare material/assignments on your chosen topics, as long as you let me know ahead of time. I would like to get to know you and your goals… See you soon.',
+    displayPicture: 'https://i.imgur.com/lz4w0C4.jpg',
   },
 
   {
@@ -812,8 +812,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Hindi',
     alsoSpeaks: [''],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am an experienced and patient teacher and I adapt my teaching methods according to your abilities and individual needs in order to ensure that you gain the most value from our lessons. Whether you need formal classes or just conversation practise, I am here to help you in achieving your goals.',
+    displayPicture: 'https://i.imgur.com/lyx2bIW.jpg',
   },
 
   {
@@ -824,8 +824,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Gujarati',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have a passion for languages and different cultures and enjoy interacting with people of all kinds of backgrounds. During my time as a teacher, I have met and taught students of all age groups and from all around the globe and many of them, I am happy to call (now) my friends. I am convinced that I can help you make your learning experience enjoyable and productive',
+    displayPicture: 'https://i.imgur.com/YelyK0K.jpg',
   },
 
   {
@@ -836,8 +836,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Gujarati',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Abha. I am from Rajasthan but currently living in New Delhi. I became a full-time online language teacher in 2012. I teach my native language Gujarati. ',
+    displayPicture: 'https://i.imgur.com/gkHHw0z.jpg',
   },
 
   {
@@ -848,8 +848,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Gujarati',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Do you like Indian food and Bollywood movies? Want to immerse yourself in Indian culture? I can help with that! :)',
+    displayPicture: 'https://i.imgur.com/wPYsNzg.jpg',
   },
 
   {
@@ -860,8 +860,8 @@ export default [
     pricePerHour: 14,
     teaches: 'Tagalog',
     alsoSpeaks: ['English', 'Spanish'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, my name is Carlo and I\'m from the Philippines. I can teach different students of all levels and ages . I enjoy having free talk conversations with topics about food, travel, education and anything interesting to the students.',
+    displayPicture: 'https://i.imgur.com/4LHnAZm.jpg',
   },
 
   {
@@ -872,8 +872,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Tagalog',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello there! My name is Migs, and I am a third-year undergraduate student at De La Salle University-Manila. I believe that teaching is vital in helping others optimize their learning experience.',
+    displayPicture: 'https://i.imgur.com/xthjnSQ.jpg',
   },
 
   {
@@ -884,8 +884,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Tagalog',
     alsoSpeaks: ['English', 'Malay'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have traveled to a lot of countries and I realized that learning languages is very helpful. It opens you to many possibilities.',
+    displayPicture: 'https://i.imgur.com/TNV5Y9N.jpg',
   },
 
   {
@@ -896,8 +896,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Italian',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Antonio, I am a native italian speaker and I currently live in Rome. My teaching style is informal and friendly.',
+    displayPicture: 'https://i.imgur.com/Zp4QnsF.jpg',
   },
 
   {
@@ -908,8 +908,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Italian',
     alsoSpeaks: ['French', 'Spanish'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am an Italian girl who loves studying and teaching languages. I am passionate about the different cultures that characterize our world.',
+    displayPicture: 'https://i.imgur.com/69s2utI.jpg',
   },
 
   {
@@ -920,8 +920,8 @@ export default [
     pricePerHour: 12,
     teaches: 'Italian',
     alsoSpeaks: ['German'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Professional lessons based on multimedia resources! I am native Italian but I lived abroad within the last 7 years between the UK, Spain, and Australia.',
+    displayPicture: 'https://i.imgur.com/Ip0905U.jpg',
   },
 
   {
@@ -932,8 +932,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Italian',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Would you like to become a fluent Italian speaker? Then my classes are perfect for you! Book your first class now and start learning from day 1!',
+    displayPicture: 'https://i.imgur.com/Z2weJWN.jpg',
   },
 
   {
@@ -944,8 +944,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Korean',
     alsoSpeaks: ['English', 'Japanese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, my name is Heo. I am pleased to meet you! From your first days with Korean, learning the alphabet and the sounds, I can help you build the Korean language skills to get by and thrive.',
+    displayPicture: 'https://i.imgur.com/s3I09in.jpg',
   },
 
   {
@@ -956,8 +956,8 @@ export default [
     pricePerHour: 8,
     teaches: 'Korean',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello, everyone! I am from Seoul, the capital city of South Korea. Although Korea is a small country, but I can see more and more people are attracted by Korean culture, I am so thrilled.',
+    displayPicture: 'https://i.imgur.com/Rn4wKDa.jpg',
   },
 
   {
@@ -968,8 +968,8 @@ export default [
     pricePerHour: 14,
     teaches: 'Korean',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello everyone, nice to meet you. When I needed to improve English to take my major at an art school, I would exchange both Korean and English with many international people and because of that, I have been interested in teaching Korean to foreigners.',
+    displayPicture: 'https://i.imgur.com/vOyN9Nl.jpg',
   },
 
   {
@@ -980,8 +980,8 @@ export default [
     pricePerHour: 16,
     teaches: 'Korean',
     alsoSpeaks: ['French', 'Spanish'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I have tought Korean as a foreign language for 4 years. All levels welcome!',
+    displayPicture: 'https://i.imgur.com/86FXfnu.jpg',
   },
   {
     firstName: 'Ryota',
@@ -991,8 +991,8 @@ export default [
     pricePerHour: 12,
     teaches: 'English',
     alsoSpeaks: ['Japanese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'My name is Ryota and I am a univerisity professor currently offering private lessons. I teach English and speak Japanese as well.',
+    displayPicture: 'https://i.imgur.com/HVv7om7.jpg',
   },
   {
     firstName: 'Takuma',
@@ -1002,8 +1002,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Japanese',
     alsoSpeaks: ['English'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello from beautiful Japan. I am a qialified teacher based in Kyoto. I have lived abroad and speak English as well.',
+    displayPicture: 'https://i.imgur.com/MlsCDBq.jpg',
   },
 
   {
@@ -1014,8 +1014,8 @@ export default [
     pricePerHour: 10,
     teaches: 'Mandarin',
     alsoSpeaks: ['English', 'Cantonese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Nihao! Welcome to my teacher profile. I am Zhou and teach Chinese. I can offer group classes or private lessons.',
+    displayPicture: 'https://i.imgur.com/asybt6w.jpg',
   },
 
   {
@@ -1026,8 +1026,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Mandarin',
     alsoSpeaks: ['English', 'Cantonese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Hello aspiring students! Do you want to learn more about the Chinese language and culture? Feel free to contact me and we will discuss your needs.',
+    displayPicture: 'https://i.imgur.com/UKEQNcO.jpg',
   },
 
   {
@@ -1038,8 +1038,8 @@ export default [
     pricePerHour: 9,
     teaches: 'Mandarin',
     alsoSpeaks: ['English', 'Cantonese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'Best rated teacher in Wuhan. I have 7 years of experience and keep my price low. Contact me for more info.',
+    displayPicture: 'https://i.imgur.com/F628evp.jpg',
   },
 
   {
@@ -1050,7 +1050,7 @@ export default [
     pricePerHour: 12,
     teaches: 'Mandarin',
     alsoSpeaks: ['English', 'Cantonese'],
-    aboutMe: 'Many Many words',
-    displayPicture: 'IMAGE',
+    aboutMe: 'I am an experienced teacher based in Wuhan. I also speak excellent English. Hit me up if you want to learn Chinese.',
+    displayPicture: 'https://i.imgur.com/7hy7ttt.jpg',
   }
 ]
