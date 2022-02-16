@@ -16,7 +16,6 @@ const TeacherProfile = () => {
   // Global variables
   const navigate = useNavigate()
   const { teacherId } = useParams()
-  const { reviewId } = useParams()
 
   // State
   const [teacher, setTeacher] = useState(null)
@@ -90,7 +89,8 @@ const TeacherProfile = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      navigate(`${teacherId}`)
+      window.location.reload()
+      // navigate(`/teachers/${teacherId}`)
     } catch (err) {
       setFormErrors(err.response.data.errors)
     }
@@ -101,10 +101,6 @@ const TeacherProfile = () => {
     setFormData(newObj)
     setFormErrors({ ...formErrors, [e.target.name]: '' })
   }
-
-  useEffect(() => {
-    if (teacher) { console.log(teacher.reviews) }
-  }, [teacher])
 
   return (
     <Container className="mt-4">
@@ -136,7 +132,7 @@ const TeacherProfile = () => {
                 <Form.Control onChange={handleChange} type="number" min="0" max="5" name="rating" placeholder="Rating" />
               </Form.Group>
               <Form.Group className='text-center mt-4'>
-                <Button onSubmit={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
+                <Button onClick={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
               </Form.Group>
               {userIsOwner() &&
                 <div className="buttons mb-4">
