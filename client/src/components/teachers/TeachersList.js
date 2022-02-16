@@ -49,8 +49,9 @@ const TeachersList = () => {
 
 
     <>
-      <Link to="/addteacher" className='btn btn-warning'>add yourself as a teacher ↩️ </Link>
-      <p className='lead'>Search from {updatedTeachers.length} teachers</p>
+    <Container className='teacherlist_container'>
+      {/* <Link to="/addteacher" className='btn btn-warning'>add yourself as a teacher ↩️ </Link> */}
+      <p className='lead'>Search from our {teachers.length} trusted teachers</p>
 
 
       <div className='form_container'>
@@ -61,10 +62,11 @@ const TeachersList = () => {
               setSearchTerm(event.target.value)
             }} />
         </Form>
-      </div>
-      <form onChange={handleChange}>
+      </div> 
+      <div className='select_form_container'>
+      <form className='select_form' onChange={handleChange}>
         <label>Search by max price </label>
-        <select>
+        <select class="form-select" aria-label="Default select example">
           <option value="" disabled selected >-£-</option>
           <option value="10">£10</option>
           <option value="15">£15</option>
@@ -74,10 +76,12 @@ const TeachersList = () => {
           <option value="35">£35</option>
         </select>
       </form>
+      </div> 
       <ul className='teachers_list'></ul>
       {/* {updatedTeachers.length > 0 ?
         <> */}
-          <Container className='teachers_container'>{updatedTeachers && updatedTeachers.filter((teachers) => {
+          {/* <Container className='teachers_container'> */}
+            {updatedTeachers && updatedTeachers.filter((teachers) => {
             if (searchTerm === '') {
               return updatedTeachers
             } else if (teachers.teaches.toLowerCase().includes(searchTerm.toLowerCase())) {
@@ -119,6 +123,7 @@ const TeachersList = () => {
           })}
           {/* </>
       } */}
+        {/* </Container> */}
         </Container>
 
     </>
