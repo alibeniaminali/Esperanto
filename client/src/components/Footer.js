@@ -33,6 +33,9 @@ const Footer = () => {
                     </ul>
                 </Col>
             </Row>
+            <div className="footer-bottom">
+                <p className="text xs-center">&copy;{new Date().getFullYear()} Esperanto. App - London - United Kingdom</p>
+            </div>
         </Container>
     )
 }
