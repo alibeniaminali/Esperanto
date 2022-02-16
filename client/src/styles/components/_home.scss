@@ -56,7 +56,6 @@
 
 // Mobile
 @media (max-width: 575px) {
-
     .container-fluid {
             .row {
                 margin: 5px;
@@ -93,8 +92,8 @@
     }
 }
 
-// Browser 
-@media (min-width: 575px) {
+// Tablet 
+@media (max-width: 900px) {
 
     .container-fluid {
             .row {

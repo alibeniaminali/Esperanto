@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import PeopleTalking from '../images/people-talking-img.png'
-import TeacherImg from '../images/join.png'
+// import PeopleTalking from '../images/people-talking-img.png'
+// import TeacherImg from '../images/join.png'
 
 
 const Home = () => {
@@ -23,16 +23,16 @@ const Home = () => {
         
         <Link to="/teachers" className='btn btn-warning'>Find your teacher ↩️ </Link>
     </Col>
-    <Col sm={4}>
+    {/* <Col sm={4}>
       <img
       src="https://media.istockphoto.com/photos/student-using-laptop-having-online-class-with-teacher-picture-id1288092444?b=1&k=20&m=1288092444&s=170667a&w=0&h=L968NhkwgRZhpHWoNtdKy_Hk4kNELzb88Jp9Ja5qzWY="
       className="img-thumbnail"
       alt="person studying online">
       </img>
-    </Col>
-    <Col sm={3}>
+    </Col> */}
+    {/* <Col sm={3}>
       <img src={TeacherImg} className="img-thumbnail" alt="animated teacher"></img>
-    </Col>
+    </Col> */}
   </Row>
 
   <Row className="row2">
@@ -79,9 +79,9 @@ const Home = () => {
   </Card>
   </Col>
   </Row>
-  <Row className="animated-img-chatting">
+  {/* <Row className="animated-img-chatting">
     <img src={PeopleTalking} alt="people chatting"></img>
-  </Row> 
+  </Row>  */}
 </Container>
 </>
   )
