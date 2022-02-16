@@ -48,21 +48,20 @@ const TeacherProfile = () => {
     getSingleTeacher()
   }, [teacherId])
 
-  const handleDelete = async (e) => {
-    e.preventDefault()
-    console.log(this.props)
-    try {
+  // const handleDelete = async (e) => {
+  //   e.preventDefault()
+  //   try {
 
-      await axios.delete(`/api/teachers/${teacherId}/reviews/${reviewId}`, {
-        headers: {
-          Authorization: `Bearer ${getTokenFromLocalStorage()}`,
-        },
-      })
-      // navigate(`/${teacherId}`)
-    } catch (err) {
-      console.log('yikes')
-    }
-  }
+  //     await axios.delete(`/api/teachers/${teacherId}/reviews/${reviewId}`, {
+  //       headers: {
+  //         Authorization: `Bearer ${getTokenFromLocalStorage()}`,
+  //       },
+  //     })
+  //     // navigate(`/${teacherId}`)
+  //   } catch (err) {
+  //     console.log('yikes')
+  //   }
+  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -119,9 +118,9 @@ const TeacherProfile = () => {
               <Form.Group className='text-center mt-4'>
                 <Button onSubmit={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
               </Form.Group>
-              <Form.Group>
+              {/* <Form.Group>
                 <Button onSubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
-              </Form.Group>
+              </Form.Group> */}
             </Form>
             <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
 
