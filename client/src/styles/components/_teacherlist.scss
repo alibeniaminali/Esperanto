@@ -48,3 +48,15 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
+.button_col{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#teacher_card_link{
+  
+  padding: 22px;
+}

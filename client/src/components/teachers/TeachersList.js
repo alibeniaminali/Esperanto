@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+
 // import Select from 'react-select'
 
 import { Link } from 'react-router-dom'
@@ -91,18 +93,18 @@ const TeachersList = () => {
             const { firstName, lastName, displayPicture, teaches, location, pricePerHour, avgRating, _id } = teacher
             return (
               <Col key={_id} md="10" lg="8" className="teacher mb-4">
-                <Link id="teacher_card_link" to={`/teachers/${teacher._id}`}>
+                {/* <Link id="teacher_card_link" to={`/teachers/${teacher._id}`}> */}
                   <Card className="h-100">
                     <Card.Header><h3>{firstName} {lastName}</h3>
                     </Card.Header>
                     <Card.Body>
                       <Row className="row1">
-                        <Col sm={8}>
+                        <Col sm>
                           <div className="image_container">
                             <Card.Img className="img-fluid img-thumbnail" src={displayPicture} />
                           </div>
                         </Col>
-                        <Col sm={4}>
+                        <Col sm>
                           <Card.Title><p>{firstName} teaches {teaches}</p></Card.Title>
                           <Card.Text>
                             <p>{firstName} is based in {location}</p>
@@ -111,13 +113,19 @@ const TeachersList = () => {
                             <p>Average Rating : {avgRating}</p>
                           </Card.Text>
                         </Col>
+                        <Col sm className='button_col'>
+                          <div className="button_container">
+                          {/* <Button variant="warning">Warning</Button>{' '} */}
+                          <Link to={`/teachers/${teacher._id}`} id="teacher_card_link" className='btn btn-warning list'>View Profile </Link> 
+                          </div>
+                        </Col>
                       </Row>
                     </Card.Body>
                     <Card.Footer className="text-center">
                       <p>{firstName}'s Hourly Rate = £{pricePerHour}</p>
                     </Card.Footer>
                   </Card>
-                </Link>
+                {/* </Link> */}
               </Col>
             )
           })}
