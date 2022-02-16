@@ -26,15 +26,15 @@ const Footer = () => {
                 </Col>
                 <Col className="footer-links col-sm">
 
-          <h4>Socials</h4>
-          <ul className="list-unstyled">
-            <li><a href="/">GitHub</a></li>
-            <li><a href="/">LinkedIn</a></li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
-  )
+                    <h4>Socials</h4>
+                    <ul className="list-unstyled">
+                        <li><a href="/">GitHub</a></li>
+                        <li><a href="/">LinkedIn</a></li>
+                    </ul>
+                </Col>
+            </Row>
+        </Container>
+    )
 }
 
 export default Footer
