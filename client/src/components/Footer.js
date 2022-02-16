@@ -28,7 +28,7 @@ const Footer = () => {
 
                     <h4>Socials</h4>
                     <ul className="list-unstyled">
-                        <li><a href="/">GitHub</a></li>
+                        <li><a href="https://github.com/alibeniaminali/project-3" target="blank" >GitHub</a></li>
                         <li><a href="/">LinkedIn</a></li>
                     </ul>
                 </Col>

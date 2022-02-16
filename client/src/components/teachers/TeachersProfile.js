@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 import { getTokenFromLocalStorage, getPayload } from '../helpers/auth'
@@ -103,10 +105,14 @@ const TeacherProfile = () => {
   }
 
   return (
-    <Container className="mt-4">
+    <Container>
       {teacher ?
         <div className="teacherProfile">
-          <div className="profile_image_container"><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
+          <Row>
+            <Col sm={12}>
+              <div className="profile_image_container"><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
+            </Col>
+          </Row>
           <div className="teacher-info">
             <h3>{teacher.firstName} {teacher.lastName}</h3>
             <p>About {teacher.firstName}: {teacher.aboutMe}</p>
@@ -131,20 +137,22 @@ const TeacherProfile = () => {
                 <Form.Label htmlFor="rating">Rating</Form.Label>
                 <Form.Control onChange={handleChange} type="number" min="0" max="5" name="rating" placeholder="Rating" />
               </Form.Group>
-              <Form.Group className='text-center mt-4'>
+                </Form>
+                <div className="profile-buttons">
                 <Button onClick={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
-              </Form.Group>
+
               {userIsOwner() &&
                 <div className="buttons mb-4">
                   <Button variant='danger' onClick={deleteTeacher}>Delete teacher</Button>
                 </div>
               }
-            </Form>
             {userIsOwner() &&
               <div className="buttons mb-4">
                 <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
               </div>
+              
             }
+            </div>
           </div>
         </div>
         :
