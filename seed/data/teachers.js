@@ -9,6 +9,10 @@ export default [
     alsoSpeaks: ['English'],
     aboutMe: 'Hi, I\'m Elena and I\'ve been teaching Bulgarian as a foreign language for 5 years. My lessons are fun and interactive. Contact me today!🇧🇬 ',
     displayPicture: 'https://i.imgur.com/jnhsiSw.jpg',
+    reviews: [{
+      text: 'Learning was such a lot of fun with Elena!',
+      rating: 5,
+    }],
   },
   {
     firstName: 'Ali',
@@ -20,6 +24,10 @@ export default [
     alsoSpeaks: ['English'],
     aboutMe: 'Hello everyone! Welcome to my Esperanto profile! I am Ali. I was born and raised in Turkey and currently I live in UK. I am a native Turkish speaker. I speak also English and Bulgarian. My main interests are philosophy, history, politics, technology and music.',
     displayPicture: 'https://i.imgur.com/HDqdTMO.jpg',
+    reviews: [{
+      text: 'Wow',
+      rating: 5,
+    }],
   },
   {
     firstName: 'Peter',
@@ -75,6 +83,10 @@ export default [
     alsoSpeaks: ['Arabic', 'French'],
     aboutMe: 'Hi I am Jane, I am a part time teacher and have been living in Uganda for the past 15 years and am fluent in the language',
     displayPicture: 'https://i.imgur.com/ncwRacO.jpg',
+    reviews: [{
+      text: 'Wow',
+      rating: 5,
+    }],
   },
   {
     firstName: 'Kalem',

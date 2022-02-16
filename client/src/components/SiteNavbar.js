@@ -4,12 +4,21 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { userIsAuthenticated } from './helpers/auth'
 // import Form from 'react-bootstrap/Form'
 // import FormControl from 'react-bootstrap/FormControl'
 // import Button from 'react-bootstrap/Button'
 
+
 const SiteNavbar = () => {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    window.localStorage.removeItem('teachers-token')
+    navigate('/')
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
@@ -37,15 +46,27 @@ const SiteNavbar = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Link to="/teachers" className="btn btn-light">
-              Find Teachers
-            </Link>
-            <Nav.Link href="/register">Register</Nav.Link>
-            <Nav.Link eventKey={2} href="/login">
-              Login
-            </Nav.Link>
-          </Nav>
+          {userIsAuthenticated() ?
+            <Nav>
+              <Nav.Link href='/addteacher'>
+                Become A Teacher
+              </Nav.Link>
+              <Nav.Link onClick={handleLogout}>
+                Logout
+              </Nav.Link>
+            </Nav>
+            :
+            <>
+              <Nav>
+                <Link to="/teachers" className="btn btn-light">
+                  Find Teachers
+                </Link>
+                <Nav.Link href="/register">Register</Nav.Link>
+                <Nav.Link eventKey={2} href="/login">Login</Nav.Link>
+              </Nav>
+            </>
+          }
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

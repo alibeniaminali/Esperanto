@@ -18,7 +18,13 @@ const seedDatabase = async () => {
     console.log(`Woah woah, so many users ${users.length}`)
 
     const ownedTeachers = teacherData.map(teacher => {
-      return { ...teacher, owner: users[0]._id }
+      let reviewsArray = []
+      if (teacher.reviews) {
+        reviewsArray = teacher.reviews.map(review => {
+          return { ...review, owner: users[0]._id }
+        })
+      }
+      return { ...teacher, reviews: reviewsArray, owner: users[0]._id }
     })
 
     const teachers = await Teacher.create(ownedTeachers)

@@ -11,8 +11,6 @@ const reviewSchema = new Schema({
   timestamps: true,
 })
 
-
-// need to add owner field
 const teacherSchema = new Schema({
   firstName: { type: String, required: true, maxlength: 20 },
   lastName: { type: String, required: true, maxlength: 20 },

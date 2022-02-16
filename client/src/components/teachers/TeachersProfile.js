@@ -75,7 +75,7 @@ const TeacherProfile = () => {
   //         Authorization: `Bearer ${getTokenFromLocalStorage()}`,
   //       },
   //     })
-  //     // navigate(`/${teacherId}`)
+  //     navigate(`/${teacherId}`)
   //   } catch (err) {
   //     console.log('yikes')
   //   }

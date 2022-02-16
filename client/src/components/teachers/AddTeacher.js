@@ -69,7 +69,7 @@ const AddTeacher = () => {
   return (
     <section className="form-page">
       <Container>
-        <h2>Register as a teacher</h2>
+        <h2>Sign up to teach with us!</h2>
         <TeacherForm
           handleSubmit={handleSubmit}
           handleChange={handleChange}
