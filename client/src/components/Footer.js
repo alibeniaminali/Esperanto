@@ -16,7 +16,7 @@ const Footer = () => {
                 <Col className="footer-title col-sm">
                 <h4><a href="/" className="all navbar-brand">Esperanto.</a></h4>
                 </Col>
-                <Col className="col-sm">
+                <Col className="footer-links col-sm">
 
                     <h4>Platform</h4>
                     <ul className="list-unstyled">
@@ -24,7 +24,7 @@ const Footer = () => {
                         <li><a href="/register">Register</a></li>
                     </ul>
                 </Col>
-                <Col className="col-sm">
+                <Col className="footer-links col-sm">
 
                     <h4>Socials</h4>
                     <ul className="list-unstyled">
