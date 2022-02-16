@@ -1,75 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
 
-// Mobile 
+// // Mobile 
 
-.main-footer {
+// .main-footer {
+//     background-color: #f6f0ea;
+//     text-align: center;
+//     margin-top: 20px;
+    
+//     .footer-logo {
+//         width: 30%;
+//     }
+//     .brand {
+//         a {
+//             color: black;
+//             font-size: 35px;
+//             font-family:'Bebas Neue', sans-serif;
+//             margin: 0 auto;
+//         }
+//     }
+//     .row {
+//         .list-unstyled {
+//             a {
+//                 color: black;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+//     .row1 {
+//         height: 80px;
+//     }
+//     li {
+//         padding-bottom: 7px;
+//     }
+//     }
+
+
+// // Small screens , Laptops
+// @media (min-width: 769px) {
+//     .main-footer {
+//         background-color: #f6f0ea;
+//         text-align: center;
+//         .logo-container {
+//             display: flex;
+//             justify-content: flex-end;
+//             height: 100%;
+//             margin-top:45px;
+//             .footer-logo {
+//                 width: 40%;
+//             }
+//         }
+//         .platform {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             h4 {
+//                 margin-top: 25px;
+//             }
+//             li {
+//                 padding-bottom: 5px;
+//             }
+//         }
+//         .socials {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             h4 {
+//                 margin-top: 25px;
+//             }
+//             li {
+//                 padding-bottom: 5px;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 575px) {
+.footer {
     background-color: #f6f0ea;
-    text-align: center;
     margin-top: 20px;
     
-    .footer-logo {
-        width: 30%;
-    }
-    .brand {
-        a {
-            color: black;
-            font-size: 35px;
-            font-family:'Bebas Neue', sans-serif;
-            margin: 0 auto;
-        }
-    }
-    .row {
-        .list-unstyled {
-            a {
-                color: black;
-                text-decoration: none;
-            }
-        }
-    }
-    .row1 {
-        height: 80px;
-    }
-    li {
-        padding-bottom: 7px;
-    }
-    }
+    .footer-row {
+        display: flex;
+        flex-direction: column;
 
-
-// Small screens , Laptops
-@media (min-width: 769px) {
-    .main-footer {
-        background-color: #f6f0ea;
-        text-align: center;
-        .logo-container {
-            display: flex;
-            justify-content: flex-end;
-            height: 100%;
-            margin-top:45px;
             .footer-logo {
-                width: 40%;
+                display: flex;
+                justify-content: center;
+                padding: 20px 0px 5px 0px;
             }
-        }
-        .platform {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h4 {
-                margin-top: 25px;
+            .footer-title {
+                display: flex;
+                justify-content: center;
+                a { // Esperanto. 
+                    font-family: 'Bebas Neue', sans-serif;
+                    color: black;
+                    font-size: 30px;
+                    padding-left: 20px;
+                }
             }
-            li {
-                padding-bottom: 5px;
+            .col-sm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                ul {
+                    li {
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                
             }
-        }
-        .socials {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h4 {
-                margin-top: 25px;
-            }
-            li {
-                padding-bottom: 5px;
-            }
-        }
     }
 }
+}
+
+@media (min-width: 576px) {
+    .footer {
+        background-color: #f6f0ea;
+        margin-top: 20px;
+        padding-top: 10px;
+
+
+
+
+
+
+
+    }
+}
+
+// @media (min-width: 481px) {
+//     .footer-row {
+
+//         display: flex;
+//         align-items: center;
+//         .footer-title {
+//             a {
+//                 font-family: 'Bebas Neue', sans-serif;
+//                 color: black;
+//                 font-size: 35px;
+//             }
+//         }
+//         .col-sm {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             text-align: center;
+//             padding: 10px;
+//                 ul {
+//                     li {
+//                         a {
+//                             color: black;
+//                             text-decoration: none;
+//                             font-size: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//     }
+// }
