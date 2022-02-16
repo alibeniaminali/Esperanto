@@ -5,26 +5,26 @@ import Col from 'react-bootstrap/Col'
 import FooterImage from '../images/logo.png'
 
 const Footer = () => {
-  return (
-    <Container fluid className="footer">
-      <Row className="footer-row">
-        <Col className="footer-logo col-sm">
-          <img
-            src={FooterImage} className="footer-logo" alt="logo">
-          </img>
-        </Col>
-        <Col className="footer-title col-sm">
-          <h4><a href="/" className="all navbar-brand">Esperanto.</a></h4>
-        </Col>
-        <Col className="col-sm">
+    return (
+        <Container fluid className="footer">
+            <Row className="footer-row">
+                <Col className="footer-logo col-sm">
+                <img
+                    src={FooterImage} className="footer-logo" alt="logo">
+                </img>
+                </Col>
+                <Col className="footer-title col-sm">
+                <h4><a href="/" className="all navbar-brand">Esperanto.</a></h4>
+                </Col>
+                <Col className="footer-links col-sm">
 
-          <h4>Platform</h4>
-          <ul className="list-unstyled">
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-          </ul>
-        </Col>
-        <Col className="col-sm">
+                    <h4>Platform</h4>
+                    <ul className="list-unstyled">
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                    </ul>
+                </Col>
+                <Col className="footer-links col-sm">
 
           <h4>Socials</h4>
           <ul className="list-unstyled">
