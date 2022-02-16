@@ -1,11 +1,29 @@
 import React from "react";
-
-
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import StudentsImg from '../../images/students.png'
+// import { ConnectionStates } from "mongoose";
 
 const AboutUs = () => {
 
   return (
-    <h1>Hello</h1>
+    <Container>
+      <Row>
+      <Col className="aboutus">
+      <h1>About</h1>
+      <h4>We are a team of four aspiring software developers in the midst of an intense learning course with General Assembly.</h4>
+      </Col>
+      <Col><img src={StudentsImg} className="aboutus-img" alt="animated teacher"></img></Col>
+      </Row>
+      {/* <Row>
+      <Col><img src={StudentsImg} className="aboutus-img" alt="animated teacher"></img></Col>
+      <Col className="aboutus">
+      <h1>About</h1>
+      <h4>We are a team of four aspiring software developers in the midst of an intense learning course with General Assembly.</h4>
+      </Col>
+      </Row> */}
+    </Container>
   )
 }
 
@@ -48,3 +66,24 @@ export default AboutUs
     //   </div>
 
     // </div>
+
+//   <Container>
+  //   <Row className="justify-content-md-center">
+  //     <Col xs lg="2">
+  //     <img src={TeacherImg} className="img-thumbnail" alt="animated teacher"></img>
+  //     </Col>
+  //     <Col md="auto">
+  //       <h4>We are a team of four aspiring software developers in the midst of an intense learning course with General Assembly.</h4>
+  //       </Col>
+  //     <Col xs lg="2">
+  //       3 of 3
+  //     </Col>
+  //   </Row>
+  //   <Row>
+  //     <Col>1 of 3</Col>
+  //     <Col md="auto">Variable width content</Col>
+  //     <Col xs lg="2">
+  //       3 of 3
+  //     </Col>
+  //   </Row>
+  // </Container>
