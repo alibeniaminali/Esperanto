@@ -127,7 +127,7 @@ const TeacherProfile = () => {
               </Form.Group>
             </Form>
 
-            <Button onsubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button>
+            {/* <Button onsubmit={handleDelete} variant="warning" type="submit">Delete Your Review</Button> */}
             
             <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
     

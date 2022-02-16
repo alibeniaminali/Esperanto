@@ -31,6 +31,16 @@ const TeachersList = () => {
 
   }
 
+  const handleChange = (event) => {
+    const filteredTeachers = teachers.filter((teachers) => {
+      return teachers.pricePerHour <= parseFloat(event.target.value)
+    })
+    setTeachers(filteredTeachers)
+  }
+
+  console.log(teachers)
+
+  
   // const options = teachers.map(teacher => {
   //   return {
   //     label: teacher.teaches,
@@ -51,6 +61,18 @@ const TeachersList = () => {
         options={options}
         onChange={opt => console.log(opt)}
         /> */}
+      <form onChange={handleChange}>
+        <label>Search by max price </label>
+        <select>
+          <option value="" defaultValue>Make a choice</option>
+          <option value="10">£10</option>
+          <option value="15">£15</option>
+          <option value="20">£20</option>
+          <option value="25">£25</option>
+          <option value="30">£30</option>
+          <option value="30">£35</option>
+        </select>
+      </form>
       <div className='form_container'>
         <Form onSubmit={handleSubmit}>
           <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
