@@ -32,7 +32,7 @@ const Register = () => {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault() // prevent reload
+    e.preventDefault()
     try {
       await axios.post('/api/register', formData)
       navigate('/login')

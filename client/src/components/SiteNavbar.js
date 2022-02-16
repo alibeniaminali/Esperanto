@@ -33,11 +33,22 @@ const SiteNavbar = () => {
               >
                 Ali Ali
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item
+                href="https://www.linkedin.com/in/dougieb/"
+                target="_blank"
+              >
                 Dougie Brown
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Peter Bid</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
+              <NavDropdown.Item
+                href="#https://uk.linkedin.com/in/peter-bid-b224185a"
+                target="blank"
+              >
+                Peter Bid
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.linkedin.com/in/elenagicheva/"
+                target="blank"
+              >
                 Elena Gicheva
               </NavDropdown.Item>
               <NavDropdown.Divider />
