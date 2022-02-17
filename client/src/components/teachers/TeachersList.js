@@ -85,7 +85,7 @@ const TeachersList = () => {
                 </Card.Header>
                 <Card.Body>
                   <Row className="row1">
-                    <Col sm>
+                    <Col id="teacher-image-profile" sm>
                       <div className="image_container">
                         <Card.Img className="img-fluid img-thumbnail" src={displayPicture} />
                       </div>

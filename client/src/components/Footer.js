@@ -16,8 +16,7 @@ const Footer = () => {
                 <Col className="footer-title col-sm">
                 <h4><a href="/" className="all navbar-brand">Esperanto.</a></h4>
                 </Col>
-                <Col className="footer-links col-sm">
-
+                {/* <Col className="footer-links col-sm">
                     <h4>Platform</h4>
                     <ul className="list-unstyled">
                         <li><a href="/login">Login</a></li>
@@ -25,13 +24,12 @@ const Footer = () => {
                     </ul>
                 </Col>
                 <Col className="footer-links col-sm">
-
                     <h4>Socials</h4>
                     <ul className="list-unstyled">
                         <li><a href="https://github.com/alibeniaminali/project-3" target="blank" >GitHub</a></li>
                         <li><a href="/">LinkedIn</a></li>
                     </ul>
-                </Col>
+                </Col> */}
             </Row>
             <div className="footer-bottom">
                 <p className="text xs-center">&copy;{new Date().getFullYear()} Esperanto. App - London - United Kingdom</p>
