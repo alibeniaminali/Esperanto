@@ -22,10 +22,10 @@ export default [
     displayPicture: 'https://i.imgur.com/HDqdTMO.jpg',
   },
   {
-    firstName: 'Harry',
+    firstName: 'Richard',
     lastName: 'Patch',
     location: 'London',
-    email: 'harryp@email.com',
+    email: 'richardp@email.com',
     pricePerHour: 20,
     teaches: 'Luganda',
     alsoSpeaks: ['English'],

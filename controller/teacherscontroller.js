@@ -4,7 +4,6 @@ import Teacher from '../models/teachermodel.js'
 export const allTeachers = async (req, res) => {
   try {
     const teachers = await Teacher.find()
-    console.log('it\'s working!')
     return res.status(200).json(teachers)
   } catch (error) {
     return res.status(404).json({ message: error.message })
@@ -25,10 +24,8 @@ export const getSingleTeacher = async (req, res) => {
   try {
     const { id } = req.params
     const teacher = await Teacher.findById(id).populate('reviews.owner')
-    console.log(teacher)
     return res.status(200).json(teacher)
   } catch (err) {
-    console.log(err)
     return res.status(404).json({ message: 'Not Found' })
   }
 }
@@ -63,12 +60,10 @@ export const addReview = async (req, res) => {
     const { id } = req.params
     const teacher = await Teacher.findById(id)
     if (!teacher) throw new Error('Teacher not found')
-
     const newReview = { ...req.body, owner: req.currentUser._id }
     teacher.reviews.unshift(newReview)
     await teacher.save()
     return res.status(201).json(teacher)
-
   } catch (err) {
     return res.status(422).json({ message: err.message })
   }

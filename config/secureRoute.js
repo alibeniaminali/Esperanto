@@ -12,7 +12,6 @@ export const secureRoute = async (req, res, next) => {
     req.currentUser = userToVerify
     next()
   } catch (error) {
-    console.log(error)
     return res.status(401).json({ message: 'Unauthorised' })
   }
 }

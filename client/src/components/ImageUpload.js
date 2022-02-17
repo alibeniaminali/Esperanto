@@ -8,7 +8,6 @@ export const ImageUploadField = ({ value, setFormData, handleImageUrl }) => {
     data.append('file', event.target.files[0])
     data.append('upload_preset', 'ayq31idv')
     const res = await axios.post('https://api.cloudinary.com/v1_1/dwcp0okfu/image/upload', data)
-    console.log(res.data.url)
     handleImageUrl(res.data.url)
   }
 

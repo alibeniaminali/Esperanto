@@ -6,10 +6,6 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Link, useNavigate } from 'react-router-dom'
 import { userIsAuthenticated } from './helpers/auth'
-// import Form from 'react-bootstrap/Form'
-// import FormControl from 'react-bootstrap/FormControl'
-// import Button from 'react-bootstrap/Button'
-
 
 const SiteNavbar = () => {
   const navigate = useNavigate()
