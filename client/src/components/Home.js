@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-
 import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-// import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-// import PeopleTalking from '../images/people-talking-img.png'
 import TeacherImg from '../images/joinus.png'
 import LearningLady from '../images/learning-lady.png'
-
 
 const Home = () => {
   const [teachers, setTeachers] = useState([])
@@ -27,11 +23,12 @@ const Home = () => {
       }
     }
     getTeachers()
-  }, [teachers])
+  }, [])
 
   useEffect(() => {
     function countLanguages() {
       let arr = []
+      console.log('it\'s me')
       teachers.forEach(teachers => {
         if (!arr.includes(teachers.teaches)) {
           arr.push(teachers.teaches)
@@ -40,7 +37,7 @@ const Home = () => {
       setLanguages(arr)
     }
     countLanguages()
-  }, [teachers])
+  })
 
   return (
     <>
