@@ -1,24 +1,19 @@
-// .container-fluid
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Noto+Sans&family=Nunito+Sans:wght@300&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
 
-// #aboutus {
-//   padding-top: 30px;
-// }
+.lead{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // font-family: 'Nunito Sans', sans-serif;
+  // font-weight: bolder;
+}
 
-// .mb-3 {
-//   text-align: center;
-//   padding-top: 100px;
-// }
+.h1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-// .container-sm {
-//   padding: 20px;
-// }
-
-// .linkedin {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .github {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.h3{
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
