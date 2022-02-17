@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Noto+Sans&family=Nunito+Sans:wght@300&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
+
+
 .row {
     margin-bottom: 15px;
 }
@@ -7,6 +11,7 @@
     img {
         width: 100%;
         box-shadow: 0px 1px 6px 1px #898989;
+        border-radius: 14px;
     }
     }
 }
@@ -19,11 +24,34 @@
 #back-to-teachers {
     margin: 20px 0px 20px 0px;
 }
-.teachers-profile-card {
-    margin-bottom: 15px;
-}
+
 .info-card {
     box-shadow: 0px 1px 6px 1px #898989;
+    border-radius: 16px;
+    padding: 5px;
+        .card-body {
+            p {
+                font-family: 'Nunito Sans', sans-serif;
+            }
+        }
+}
+.teacher-info {
+    .teachers-profile-card {
+        margin-bottom: 15px;
+            .card-header {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: bolder;
+            }
+    }
+    .mt-4 {
+        .mb-2 {
+            .form-label {
+                font-family: 'Nunito Sans', sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 
