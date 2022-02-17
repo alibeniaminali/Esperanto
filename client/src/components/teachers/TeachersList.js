@@ -64,12 +64,13 @@ const TeachersList = () => {
               setSearchTerm(event.target.value)
             }} />
         </Form>
-      </div> 
-      <div className='select_form_container'>
+      
+      {/* <div className='select_form_container'> */}
       <form className='select_form' onChange={handleChange}>
         <label>Search by max price </label>
         <select class="form-select" aria-label="Default select example">
           <option value="" disabled selected >-£-</option>
+          <option value="10000">Any</option>
           <option value="10">£10</option>
           <option value="15">£15</option>
           <option value="20">£20</option>
@@ -78,6 +79,7 @@ const TeachersList = () => {
           <option value="35">£35</option>
         </select>
       </form>
+      {/* </div>  */}
       </div> 
       <ul className='teachers_list'></ul>
       {/* {updatedTeachers.length > 0 ?
