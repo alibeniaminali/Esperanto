@@ -53,21 +53,22 @@ const TeachersList = () => {
     <>
     <Container className='teacherlist_container'>
       {/* <Link to="/addteacher" className='btn btn-warning'>add yourself as a teacher ↩️ </Link> */}
-      <p className='lead'>Search from our {teachers.length} trusted teachers</p>
+      {/* <p className='lead'>Search from our {teachers.length} trusted teachers</p> */}
+      <h4 className="h4">Search from our {teachers.length} trusted teachers</h4>
 
-
+      {/* <div className='forms'> */}
       <div className='form_container'>
-        <Form onSubmit={handleSubmit}>
+        <Form className='search_form' onSubmit={handleSubmit}>
           <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
           <Form.Control
             aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
               setSearchTerm(event.target.value)
             }} />
         </Form>
-      
+        {/* </div>  */}
       {/* <div className='select_form_container'> */}
-      <form className='select_form' onChange={handleChange}>
-        <label>Search by max price </label>
+      <Form id='select_form' onChange={handleChange}>
+        <Form.Label>Max price per hour </Form.Label>
         <select class="form-select" aria-label="Default select example">
           <option value="" disabled selected >-£-</option>
           <option value="10000">Any</option>
@@ -78,9 +79,9 @@ const TeachersList = () => {
           <option value="30">£30</option>
           <option value="35">£35</option>
         </select>
-      </form>
-      {/* </div>  */}
+      </Form>
       </div> 
+      {/* </div> */}
       <ul className='teachers_list'></ul>
       {/* {updatedTeachers.length > 0 ?
         <> */}
