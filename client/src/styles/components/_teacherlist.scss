@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Noto+Sans&family=Nunito+Sans:wght@300&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
+
 #teacher_card_link{
   text-decoration: none;
   color: black;
@@ -81,6 +84,9 @@ align-items: center;
 .h4{
   padding: 8px;
   padding-top: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 .h-100{
@@ -89,4 +95,40 @@ align-items: center;
 
 .form_container{
   padding-bottom: 5px;
+    .search_form {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bolder;
+    }
+    #select_form {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bolder;
+    }
+    
 }
+
+.card-body {
+  .row1 {
+    .col-sm {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
+}
+.card-footer {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bolder;
+      padding-top: 25px;
+      font-size: 20px
+}
+
+// @media (max-width: 575px) {
+//   .card-body {
+//     .row1 {
+//       .col-sm {
+//         display: flex;
+//         justify-content: center;
+//       }
+//     }
+//   }
+// }
