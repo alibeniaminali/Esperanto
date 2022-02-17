@@ -4,6 +4,8 @@ import { useParams, Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+
 
 
 import { getTokenFromLocalStorage, getPayload } from '../helpers/auth'
@@ -108,23 +110,52 @@ const TeacherProfile = () => {
     <Container>
       {teacher ?
         <div className="teacherProfile">
+          <Link to="/teachers" id="back-to-teachers" className='btn btn-warning'>Back to teachers ↩️ </Link>
           <Row>
-            <Col sm={12}>
-            <Link to="/teachers" id="back-to-teachers" className='btn btn-warning'>Back to teachers ↩️ </Link>
+            <Col sm={3}>
               <div className="profile_image_container"><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
+            </Col>
+            <Col>
+              <Card className="info-card">
+                <Card.Body>
+                  <Card.Title>{teacher.firstName} {teacher.lastName}</Card.Title>
+                  {/* <Card.Subtitle className="mb-2 text-muted">ABOUT ME</Card.Subtitle> */}
+                  <Card.Header>ABOUT ME</Card.Header>
+                  <Card.Text>{teacher.firstName}: {teacher.aboutMe}</Card.Text>
+                  
+            <p>Teaching: {teacher.teaches}</p>
+            <p>Also speaks: {teacher.alsoSpeaks.join(', ')}</p>
+            <a class="btn btn-success" href={`mailto:${teacher.email}`} role="button">Contact me by email ✉️ </a>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
           <div className="teacher-info">
+            {/* <Col>
             <h3>{teacher.firstName} {teacher.lastName}</h3>
             <p>About {teacher.firstName}: {teacher.aboutMe}</p>
             <p>Teaching: {teacher.teaches}</p>
             <p>Also speaks: {teacher.alsoSpeaks.join(', ')}</p>
             <p>Contact email: {teacher.email}</p>
+            </Col> */}
             {teacher.reviews.length ?
               teacher.reviews.map((review, i) => {
                 return (
                   <>
-                    <p key={i} >{review.text}<br />Rating: {review.rating} / 5 <br />Review by {review.owner.username}</p>
+                    <Card className="teachers-profile-card">
+                      <Card.Header>Rating : {review.rating} / 5 </Card.Header>
+                      <Card.Body>
+                        <blockquote className="blockquote mb-0">
+                        <p key={i}>
+                        {review.text}
+                        </p>
+                        <footer className="blockquote-footer">
+                        Review by {review.owner.username}
+                        </footer>
+                        </blockquote>
+                      </Card.Body>
+                    </Card>
+                    {/* <p key={i} >{review.text}<br />Rating: {review.rating} / 5 <br />Review by {review.owner.username}</p> */}
                   </>
                 )
               })
@@ -149,7 +180,7 @@ const TeacherProfile = () => {
               }
             {userIsOwner() &&
               <div className="buttons mb-4">
-                <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher ↩️ </Link>
+                <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher</Link>
               </div>
               
             }
@@ -158,7 +189,7 @@ const TeacherProfile = () => {
         </div>
         :
         <h2 className="text-center">
-          {hasError.error ? 'You need to log in buddy' : 'Loading...'}
+          {hasError.error ? 'Please log in first' : 'Loading...'}
         </h2>
       }
     </Container>
