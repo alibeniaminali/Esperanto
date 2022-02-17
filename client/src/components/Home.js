@@ -49,12 +49,12 @@ const Home = () => {
       <Container fluid>
         <Row className="row1">
           <Col sm={5}>
-            <h1>Esperanto</h1>
+            <h1>Esperanto.</h1>
             <h2>Your personal learning portal</h2>
             <p>
               Learn a language in the early morning, lunchtime, evenings or even at weekends. Choose from Arabic, French, German, Greek, Italian and a whole bunch more! One to one and group classes also available.
             </p>
-            <p className="nunito">Choose your language and expand your horizons!🌎</p>
+            <p>Choose your language and expand your horizons! 🌎</p>
 
             <Link to="/teachers" className='btn btn-warning'>Find your teacher ↩️ </Link>
           </Col>

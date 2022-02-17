@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Noto+Sans&family=Nunito+Sans:wght@300&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
 
 // // Mobile
 // @media (max-width: 575px) {
@@ -112,6 +112,9 @@
         h1, h2 {
             font-family:'Bebas Neue', sans-serif;
         }
+        p {
+            font-family: 'Nunito Sans', sans-serif;
+        }
     }
 }
 .row2 {
@@ -121,13 +124,35 @@
         width: 100%;
     }
     h2 {
-        font-family:'Bebas Neue', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    ul {
+        li {
+            font-family: 'Nunito Sans', sans-serif;
+        }
     }
 }
 .row3 {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     background-color: #ffc107;
     padding-top: 15px;
+    text-align: center;
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            color: black;
+            font-size: 34px;
+        }
+        p {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 18px;
+        }
+}
+
+@media (max-width: 575px) {
+    .row2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
 }

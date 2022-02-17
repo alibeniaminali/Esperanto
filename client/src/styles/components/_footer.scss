@@ -1,79 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:wght@100&family=Roboto+Mono:wght@200&display=swap');
 
-// // Mobile 
-
-// .main-footer {
-//     background-color: #f6f0ea;
-//     text-align: center;
-//     margin-top: 20px;
-    
-//     .footer-logo {
-//         width: 30%;
-//     }
-//     .brand {
-//         a {
-//             color: black;
-//             font-size: 35px;
-//             font-family:'Bebas Neue', sans-serif;
-//             margin: 0 auto;
-//         }
-//     }
-//     .row {
-//         .list-unstyled {
-//             a {
-//                 color: black;
-//                 text-decoration: none;
-//             }
-//         }
-//     }
-//     .row1 {
-//         height: 80px;
-//     }
-//     li {
-//         padding-bottom: 7px;
-//     }
-//     }
-
-
-// // Small screens , Laptops
-// @media (min-width: 769px) {
-//     .main-footer {
-//         background-color: #f6f0ea;
-//         text-align: center;
-//         .logo-container {
-//             display: flex;
-//             justify-content: flex-end;
-//             height: 100%;
-//             margin-top:45px;
-//             .footer-logo {
-//                 width: 40%;
-//             }
-//         }
-//         .platform {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             h4 {
-//                 margin-top: 25px;
-//             }
-//             li {
-//                 padding-bottom: 5px;
-//             }
-//         }
-//         .socials {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             h4 {
-//                 margin-top: 25px;
-//             }
-//             li {
-//                 padding-bottom: 5px;
-//             }
-//         }
-//     }
-// }
-
 @media (max-width: 575px) {
 .footer {
     background-color: #f6f0ea;
@@ -113,6 +39,12 @@
                 }
                 
             }
+    }
+    .footer-bottom {
+        p {
+            text-align: center;
+            
+        }
     }
 }
 }
@@ -155,7 +87,11 @@
                 .footer-links {
                     display: flex;
                     align-items: flex-start;
-                    
+                        ul {
+                            li {
+                                padding: 5px;
+                            }
+                        }
                 }
             }
                 .footer-bottom {
