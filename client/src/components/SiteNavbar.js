@@ -40,7 +40,7 @@ const SiteNavbar = () => {
                 Dougie Brown
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="#https://uk.linkedin.com/in/peter-bid-b224185a"
+                href="https://www.linkedin.com/in/peter-bid-b224185a"
                 target="blank"
               >
                 Peter Bid

@@ -110,6 +110,7 @@ const TeacherProfile = () => {
         <div className="teacherProfile">
           <Row>
             <Col sm={12}>
+            <Link to="/teachers" id="back-to-teachers" className='btn btn-warning'>Back to teachers ↩️ </Link>
               <div className="profile_image_container"><img src={teacher.displayPicture} alt={teacher.firstName} /></div>
             </Col>
           </Row>
