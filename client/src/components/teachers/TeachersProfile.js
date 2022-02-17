@@ -6,10 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 
-
-
 import { getTokenFromLocalStorage, getPayload } from '../helpers/auth'
-
 
 import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
@@ -17,11 +14,9 @@ import Button from 'react-bootstrap/Button'
 
 const TeacherProfile = () => {
 
-  // Global variables
   const navigate = useNavigate()
   const { teacherId } = useParams()
 
-  // State
   const [teacher, setTeacher] = useState(null)
   const [hasError, setHasError] = useState({ error: false, message: '' })
 
@@ -59,8 +54,8 @@ const TeacherProfile = () => {
         },
       })
       navigate('/teachers')
-    } catch (error) {
-      console.log('woah woah')
+    } catch (err) {
+      setFormErrors(err.response.data.errors)
     }
   }
 
@@ -69,21 +64,6 @@ const TeacherProfile = () => {
     if (!payload) return
     return teacher.owner === payload.sub
   }
-
-  // const handleDelete = async (e) => {
-  //   e.preventDefault()
-  //   try {
-
-  //     await axios.delete(`/api/teachers/${teacherId}/reviews/${reviewId}`, {
-  //       headers: {
-  //         Authorization: `Bearer ${getTokenFromLocalStorage()}`,
-  //       },
-  //     })
-  //     navigate(`/${teacherId}`)
-  //   } catch (err) {
-  //     console.log('yikes')
-  //   }
-  // }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -94,7 +74,6 @@ const TeacherProfile = () => {
         },
       })
       window.location.reload()
-      // navigate(`/teachers/${teacherId}`)
     } catch (err) {
       setFormErrors(err.response.data.errors)
     }
@@ -119,25 +98,16 @@ const TeacherProfile = () => {
               <Card className="info-card">
                 <Card.Body>
                   <Card.Title>{teacher.firstName} {teacher.lastName}</Card.Title>
-                  {/* <Card.Subtitle className="mb-2 text-muted">ABOUT ME</Card.Subtitle> */}
-                  <Card.Header>ABOUT ME</Card.Header>
-                  <Card.Text>{teacher.firstName}: {teacher.aboutMe}</Card.Text>
-                  
-            <p>Teaching: {teacher.teaches}</p>
-            <p>Also speaks: {teacher.alsoSpeaks.join(', ')}</p>
-            <a class="btn btn-success" href={`mailto:${teacher.email}`} role="button">Contact me by email ✉️ </a>
+                  <Card.Header>Hourly Rate:   £{teacher.pricePerHour}</Card.Header>
+                  <Card.Text>About Me:   {teacher.aboutMe}</Card.Text>
+                  <p>Teaching: {teacher.teaches}</p>
+                  <p>Also speaks:   {teacher.alsoSpeaks.join(', ')}</p>
+                  <a class="btn btn-success" href={`mailto:${teacher.email}`} role="button">Contact me by email ✉️ </a>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
           <div className="teacher-info">
-            {/* <Col>
-            <h3>{teacher.firstName} {teacher.lastName}</h3>
-            <p>About {teacher.firstName}: {teacher.aboutMe}</p>
-            <p>Teaching: {teacher.teaches}</p>
-            <p>Also speaks: {teacher.alsoSpeaks.join(', ')}</p>
-            <p>Contact email: {teacher.email}</p>
-            </Col> */}
             {teacher.reviews.length ?
               teacher.reviews.map((review, i) => {
                 return (
@@ -146,16 +116,15 @@ const TeacherProfile = () => {
                       <Card.Header>Rating : {review.rating} / 5 </Card.Header>
                       <Card.Body>
                         <blockquote className="blockquote mb-0">
-                        <p key={i}>
-                        {review.text}
-                        </p>
-                        <footer className="blockquote-footer">
-                        Review by {review.owner.username}
-                        </footer>
+                          <p key={i}>
+                            {review.text}
+                          </p>
+                          <footer className="blockquote-footer">
+                            Review by: {review.owner.username}
+                          </footer>
                         </blockquote>
                       </Card.Body>
                     </Card>
-                    {/* <p key={i} >{review.text}<br />Rating: {review.rating} / 5 <br />Review by {review.owner.username}</p> */}
                   </>
                 )
               })
@@ -169,21 +138,19 @@ const TeacherProfile = () => {
                 <Form.Label htmlFor="rating">Rating</Form.Label>
                 <Form.Control onChange={handleChange} type="number" min="0" max="5" name="rating" placeholder="Rating" />
               </Form.Group>
-                </Form>
-                <div className="profile-buttons">
-                <Button onClick={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
-
+            </Form>
+            <div className="profile-buttons">
+              <Button onClick={handleSubmit} variant="warning" type="submit">Post Your Review</Button>
               {userIsOwner() &&
                 <div className="buttons mb-4">
                   <Button variant='danger' onClick={deleteTeacher}>Delete teacher</Button>
                 </div>
               }
-            {userIsOwner() &&
-              <div className="buttons mb-4">
-                <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher</Link>
-              </div>
-              
-            }
+              {userIsOwner() &&
+                <div className="buttons mb-4">
+                  <Link to={`/editteacher/${teacher._id}`} className='btn btn-warning'> Edit this teacher</Link>
+                </div>
+              }
             </div>
           </div>
         </div>
