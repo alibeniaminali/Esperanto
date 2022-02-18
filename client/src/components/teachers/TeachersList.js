@@ -56,7 +56,7 @@ const TeachersList = () => {
           </Form>
           <Form id='select_form' onChange={handleChange}>
             <Form.Label>Max price per hour </Form.Label>
-            <select class="form-select" aria-label="Default select example">
+            <select className="form-select" aria-label="Default select example">
               <option value="" disabled selected >-£-</option>
               <option value="10000">Any</option>
               <option value="10">£10</option>

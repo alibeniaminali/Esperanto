@@ -51,6 +51,12 @@ const SiteNavbar = () => {
               <NavDropdown.Item href="/aboutus">
                 About this website
               </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://github.com/alibeniaminali/project-3"
+                target="blank"
+              >
+                GitHub Repo
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           {userIsAuthenticated() ?
