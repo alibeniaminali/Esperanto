@@ -53,7 +53,7 @@ const TeacherForm = ({ formData, formErrors, handleChange, handleSubmit, handleI
       handleImageUrl={handleImageUrl}
     />
     <Form.Group className='text-center mt-4'>
-      <Button variant="warning" type="submit">Submit</Button>
+      <Button variant="success" type="submit">Submit</Button>
     </Form.Group>
   </Form>
 )

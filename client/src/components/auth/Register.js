@@ -104,7 +104,7 @@ const Register = () => {
           </Form.Group>
           {/* Submit */}
           <Form.Group className="text-center mt-4">
-            <Button variant="warning" type="submit">
+            <Button variant="success" type="submit">
               Submit
             </Button>
           </Form.Group>
