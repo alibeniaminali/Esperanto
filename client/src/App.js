@@ -8,7 +8,6 @@ import TeachersList from './components/teachers/TeachersList'
 import TeachersProfile from './components/teachers/TeachersProfile'
 import AddTeacher from './components/teachers/AddTeacher'
 import AboutUs from './components/teachers/AboutUs'
-import UserProfile from './components/teachers/UserProfile'
 import EditTeacher from './components/teachers/EditTeacher'
 import Footer from './components/Footer'
 
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="teachers" element={<TeachersList />} />
           <Route path="teachers/:teacherId" element={<TeachersProfile />} />
           <Route path="addteacher" element={<AddTeacher />} />
-          <Route path="userprofile" element={<UserProfile />} />
           <Route path="editteacher/:teacherId" element={<EditTeacher />} />
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
