@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col'
 import TeacherImg from '../images/joinus.png'
 import LearningLady from '../images/learning-lady.png'
 
+
+
 const Home = () => {
   const [teachers, setTeachers] = useState([])
   const [hasError, setHasError] = useState({ error: false, message: '' })
