@@ -7,6 +7,7 @@
 }
 
 .col-sm-3 {
+    width: 29%;
     .profile_image_container {
     img {
         width: 100%;
@@ -32,6 +33,16 @@
         .card-body {
             p {
                 font-family: 'Nunito Sans', sans-serif;
+                font-size: 20px;
+            }
+            span {
+                font-family: 'Bebas Neue', sans-serif;
+            }
+            .card-text {
+                    font-size: 20px;
+            }
+            .card-title {
+                font-size: 25px;
             }
         }
 }
@@ -41,6 +52,13 @@
             .card-header {
                 font-family: 'Nunito Sans', sans-serif;
                 font-weight: bolder;
+            }
+            .card-body {
+                .blockquote {
+                    p {
+                        font-size: 16px;
+                    }
+                }
             }
     }
     .mt-4 {
@@ -57,6 +75,7 @@
 
 @media (max-width: 575px) {
     .col-sm-3 {
+        width: 90%;
     .profile_image_container {
         img {
             margin-top: 20px;
