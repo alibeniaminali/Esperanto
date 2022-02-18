@@ -49,7 +49,7 @@ const SiteNavbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/aboutus">
-                About this website
+                About This Website
               </NavDropdown.Item>
               <NavDropdown.Item
                 href="https://github.com/alibeniaminali/project-3"

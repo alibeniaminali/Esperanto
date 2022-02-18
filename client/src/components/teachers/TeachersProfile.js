@@ -102,7 +102,7 @@ const TeacherProfile = () => {
                   <Card.Text><span>About Me:</span>   {teacher.aboutMe}</Card.Text>
                   <p><span>Teaching:</span> {teacher.teaches}</p>
                   <p><span>Also speaks:</span>   {teacher.alsoSpeaks.join(', ')}</p>
-                  <a class="btn btn-success" href={`mailto:${teacher.email}`} role="button">Contact me by email ✉️ </a>
+                  <a className="btn btn-success" href={`mailto:${teacher.email}`} role="button">Contact me by email ✉️ </a>
                 </Card.Body>
               </Card>
             </Col>

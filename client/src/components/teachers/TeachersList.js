@@ -50,14 +50,14 @@ const TeachersList = () => {
           <Form className='search_form' onSubmit={handleSubmit}>
             <Form.Label htmlFor="inputPassword5">Write the language you want to find teachers for</Form.Label>
             <Form.Control
-              aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to Learn" onChange={event => {
+              aria-describedby="passwordHelpBlock" type='text' id='teacherssubmit' placeholder="I want to learn" onChange={event => {
                 setSearchTerm(event.target.value)
               }} />
           </Form>
           <Form id='select_form' onChange={handleChange}>
             <Form.Label>Max price per hour </Form.Label>
             <select className="form-select" aria-label="Default select example">
-              <option value="" disabled selected >-£-</option>
+              <option value="" disabled selected defaultValue >-£-</option>
               <option value="10000">Any</option>
               <option value="10">£10</option>
               <option value="15">£15</option>
@@ -91,12 +91,12 @@ const TeachersList = () => {
                       </div>
                     </Col>
                     <Col sm>
-                      <Card.Title><p>Teaches: {teaches}</p></Card.Title>
+                      <Card.Title>Teaches: {teaches}</Card.Title>
                       <Card.Text>
-                        <p>Based in: {location}</p>
+                        Based in: {location}
                       </Card.Text>
                       <Card.Text>
-                        <p>Average Rating : {avgRating}</p>
+                        Average Rating : {avgRating}
                       </Card.Text>
                     </Col>
                     <Col sm className='button_col'>
