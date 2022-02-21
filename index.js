@@ -12,7 +12,7 @@ const app = express()
 
 const startServer = async () => {
   try {
-    app.listen(process.env.port, () => console.log(`Lovely jubbly, port ${process.env.port}`))
+    app.listen(process.env.PORT, () => console.log(`Lovely jubbly, port ${process.env.PORT}`))
 
     await mongoose.connect(process.env.dbURI)
     app.use(express.json())
