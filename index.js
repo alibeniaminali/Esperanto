@@ -12,7 +12,7 @@ const app = express()
 
 const startServer = async () => {
   try {
-  
+
     await mongoose.connect(process.env.dbURI)
     app.use(express.json())
 
@@ -24,14 +24,16 @@ const startServer = async () => {
     app.use('/api', router)
 
     app.use(express.static(path.join(__dirname, 'client', 'build')))
+    
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
+    })
 
     app.use((req, res) => {
       return res.status(404).json({ message: 'failed to connect' })
     })
 
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-    })
+
 
     app.listen(process.env.PORT, () => console.log(`Lovely jubbly, port ${process.env.PORT}`))
 
