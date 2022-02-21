@@ -12,6 +12,8 @@ const app = express()
 
 const startServer = async () => {
   try {
+    app.listen(process.env.port, () => console.log(`Lovely jubbly, port ${process.env.port}`))
+
     await mongoose.connect(process.env.dbURI)
     app.use(express.json())
 
@@ -32,7 +34,6 @@ const startServer = async () => {
       res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
     })
 
-    app.listen(process.env.port, () => console.log(`Lovely jubbly, port ${process.env.port}`))
   } catch (error) {
     console.log(error)
   }
