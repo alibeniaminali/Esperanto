@@ -1,6 +1,6 @@
 import User from '../models/usermodel.js'
 import jwt from 'jsonwebtoken'
-import { secret } from '../config/environment.js'
+
 
 export const registerUser = async (req, res) => {
   try {
@@ -18,7 +18,7 @@ export const loginUser = async (req, res) => {
     if (!userToLogin || !userToLogin.validatePassword(password)) {
       return res.status(401).json({ message: 'Yikes, unauthorised' })
     }
-    const token = jwt.sign({ sub: userToLogin._id }, secret, { expiresIn: '7 days' })
+    const token = jwt.sign({ sub: userToLogin._id }, process.env.secret, { expiresIn: '7 days' })
     return res.status(200).json({ message: `Welcome ${userToLogin.username}`, token: token })
   } catch (error) {
     return res.status(401).json({ message: 'Yikes, unauthorised' })

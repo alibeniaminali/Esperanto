@@ -1,6 +1,5 @@
 import express from 'express'
 import mongoose from 'mongoose'
-import { port, dbURI } from './config/environment.js'
 import router from './config/routes.js'
 import 'dotenv/config' // only needs to be added if it doesn't already exist
 import path, { dirname } from 'path'
@@ -13,7 +12,7 @@ const app = express()
 
 const startServer = async () => {
   try {
-    await mongoose.connect(dbURI)
+    await mongoose.connect(process.env.dbURI)
     app.use(express.json())
 
     app.use((req, res, next) => {
@@ -33,7 +32,7 @@ const startServer = async () => {
       res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
     })
 
-    app.listen(port, () => console.log(`Lovely jubbly, port ${port}`))
+    app.listen(process.env.port, () => console.log(`Lovely jubbly, port ${process.env.port}`))
   } catch (error) {
     console.log(error)
   }
