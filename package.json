@@ -18,8 +18,8 @@
   },
   "scripts": {
     "serve": "npx nodemon index.js",
-    "seed": "node seed/seed.js"
-  },
+    "seed": "node seed/seed.js",
     "start": "node index.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  }
 }
