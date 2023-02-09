@@ -80,7 +80,7 @@ We deployed this website using Heroku and it is available
 - [x]  Heroku
 ## Installation instructions
 1. Clone our repo from GitHub onto your machine.
-2. Use `yarn` or `npm` to install all dependencies from the `package.json` file.</br>
+2. Use `yarn install` to install all dependencies from the `package.json` file.</br>
  
 [Back to the top ⬆️](#idtext)
 
